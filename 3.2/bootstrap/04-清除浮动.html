@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="张漫丽">
+    <title>清除浮动</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .row{
+            border: 1px solid red;
+        }
+        .row div{
+            border: 1px dashed gray;
+        }
+        /*.row div:nth-of-type(1) {
+            background-color: deeppink;
+        }
+        
+        .row div:nth-of-type(2) {
+            background-color: aqua;
+        }
+        
+        .row div:nth-of-type(3) {
+            background-color: gold;
+        }
+        
+        .row div:nth-of-type(4) {
+            background-color: lightcoral;
+        }*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--<div class="row">
+            <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3InletexEMCFree汉化版.exeInletexEMCFree汉化版.exe</div>
+            <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+
+             Add the extra clearfix for only the required viewport 
+            <div class="clearfix visible-xs-block"></div>
+
+            <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+            <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+        </div>-->
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+            <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+            <!-- Optional: clear the XS cols if their content doesn't match in height -->
+            <!--<div class="clearfix visible-xs-block"></div>-->
+            <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

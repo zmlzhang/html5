@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>康桥地产</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        img{
+            width: 100%;
+            /*把img标签转化为块标签，black：块*/
+            display: block;
+        }
+        div{
+            /*给span标签定位时，找一个参考点*/
+            position: relative;
+        }
+        span{
+            /*span位相对于div进行绝对定*/
+            position: absolute;
+            /*让span相对于div的底部向下移动*/
+            top: 100px;
+            left: 0px;
+
+            /*设置文本的样式*/
+            font-size: 23px;
+            color: white;
+
+            /*设置背景色*/
+            background-color: gray;
+
+            /*设置内边距*/
+            padding: 10px 15px 15px 15px;
+
+            /*设置圆角半径*/
+            border-top-right-radius: 7.5px;
+            border-bottom-right-radius: 7.5px;
+            /*border_radius四个角全是*/
+        }
+    </style>
+</head>
+<body>      
+     <a href = "yxl.html">
+        <div>
+            <img src="yxl.jpg" alt="楼盘">
+            <span>康桥原溪离</span>
+        </div>
+    </a>
+    <a href = "jxj.html">
+        <div>
+            <img src="jxj.jpg" alt="楼盘">
+            <span>康桥九溪君</span>
+        </div>
+    </a>
+    <a href = "">
+        <div>
+            <img src="lxw.jpg" alt="楼盘">
+            <span>康桥林溪湾</span>
+        </div>
+    </a>
+</body>
+</html>

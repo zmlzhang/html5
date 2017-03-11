@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+    <style>
+        table{
+            border: 1px solid rebeccapurple;
+            
+            /*设置边框与边框之间的间隔*/
+            border-spacing: 0px;
+
+            /*合并边框线与分离  separate：分离*/
+            border-collapse: collapse;
+
+            margin: 0px auto;
+        }
+        th{
+            border: 1px solid rebeccapurple;
+        }
+        td{
+            border: 1px solid rebeccapurple;
+
+            /*设置单元格的宽高,字体居中*/
+            width: 100px;
+            height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--表示表格
+    caption：表示表格标题 表格的名字-->
+    <table>
+        <caption>h5课程表</caption>
+        <!-- table head表示表头-->
+        <thead>
+            <!--table row:表示表格中的一行-->
+            <tr>
+                <!--每一列的标题-->
+                <th>周一</th>
+                <th>周二</th>
+                <th>周三</th>
+                <th>周四</th>
+                <th>周五</th>
+                <th>周六</th>
+                <th>周日</th>
+            </tr>
+        </thead>
+        <tr>
+            <!--table data表格数据-->
+            <td>html5</td>
+            <td>html5</td>
+            <td>html5</td>
+            <td>html5</td>
+            <td>html5</td>
+            <!--rowspan:合并行-->
+            <td rowspan="2">自习</td>
+            <td rowspan="3">休息</td>
+        </tr>
+        <tr>
+            <td>html5</td>
+            <td>html5</td>
+            <td>html5</td>
+            <td>html5</td>
+            <td>html5</td>
+            <!--<td>自习</td>-->
+        </tr>
+        <tr>
+            <!--colspan:合并列-->
+            <td colspan="5">自习</td>
+            <td>休息</td>
+            
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <!--form：表单，通过让客户填写，或者是悬着一些选项。
+    从而收集用户信息
+    action：动作。表单提交的网址-->
+    <form action="#">
+        <!--lable :标签；
+        for:用来表示这个label标签是为谁添加说明的
+        for="userName" 指的是为id=username的标签添加说明的
+        当点击label 光标会自动锁定对应的输入框-->
+        <label for="userName">用户名：</label>
+        <!--INPUT:输入，type:类型（1，填写。2，选项。）-->
+        <!--placeholder:占位内容 起到提示的内容-->
+        <!--required="required"：表示输入框不能为零-->
+        <input type="text" id="userName" name="userName" 
+        placeholder="请输入用户名：" value="呵呵" required="required">
+        <label for="psw">密码：</label>
+        <input type="text" id="psw"><br>
+
+        <!--单选-->
+        <!--注意：只有给每个选项设置相同的name属性
+        才能实现单选模式-->
+        <!--checked：说明这一项是默认选项-->
+        <!--value:该选项的值-->
+        请选择性别：<br>
+        <input type="radio" name="sex" checked value="male">男<br>
+        <input type="radio" name="sex" value="famale">女<br>
+
+        <!--多选-->
+        请选择兴趣爱好：<br>
+        <input type="checkbox">读书<br>
+        <input type="checkbox">唱歌<br>
+        <input type="checkbox">打篮球<br>
+        <input type="checkbox">打游戏<br>
+        <input type="checkbox">画画<br>
+
+        <!--下拉列表-->
+        <!--select：选择 option：选项 selected:默认-->
+        <select name="" id="">
+            <option value="1984">1984</option>
+            <option value="1985">1985</option>
+            <option value="1986">1986</option>
+            <option value="1987" selected>1987</option>
+        </select>
+
+        <!--多项分类下拉列表-->
+        <select name="" id="">
+            <!--group 组-->
+            <optgroup label="河南">
+                <option value="">南阳</option>
+                <option value="">信仰</option>
+                <option value="">安阳</option>
+            </optgroup>
+            <optgroup label="山西">
+                <option value="">太原</option>
+                <option value="">晋城</option>
+                <option value="">大同</option>
+            </optgroup>
+        </select>
+
+
+        <!--文本区域-->
+        <!--cols:column, 列  row:行-->
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <fieldset>
+            <legend>请选择专业：</legend>
+            <input type="checkbox">html<br>
+            <input type="checkbox">java<br>
+            <input type="checkbox">php<br>
+        </fieldset>
+
+
+        <!--提交和重置按钮-->
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+
+        <!--Button：普通按钮-->
+        <input type="button" value="登录">
+    </form>
+</body>
+</html>

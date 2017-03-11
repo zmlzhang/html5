@@ -1,0 +1,167 @@
+html{
+    font-size: 16px;
+}
+body,h4,h5,p,ul{
+    margin: 0px;
+    padding: 0px;
+}
+.nab{
+    background-image: url(img/nav-bg.png);
+    /*设置平铺，沿X轴方向*/
+    background-repeat: repeat-x;
+}
+/*去掉logo的内边距*/
+.navbar-brand{
+    padding: 0px;
+}
+/*调整logo与items之间的间隔*/
+#bs1{
+    margin-left: 50px;
+}
+/*调整选项的下内边距*/
+#bs1 a{
+    padding: 15px 10px 10px;
+    margin-right: 10px;
+}
+/*悬停出现边款线*/
+#bs1 a:hover{
+    border-bottom: 2px solid blue;
+}
+/*设置search的圆角*/
+.nab form input{
+    border-radius: 17px;
+}
+/*当屏幕小于768px时，去掉a的下边框线*/
+@media screen and (max-width:768px){
+    #bs1 a:hover{
+        border-bottom: none;
+    }
+}
+
+/*2.背景图片*/
+.banner{
+    height: 400px;
+    background-image: url(img/banner.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+@media (max-width:1920px) and (min-width:1600px){
+    .banner{
+        height: 480px;
+    }
+}
+@media (max-width:992px){
+    .banner{
+        height: 350px;
+    }
+}
+@media screen and (max-width:768px){
+    .banner{
+        background-position: 30% 50%;
+    }
+}
+
+/*内容区域*/
+.box{
+    margin-top: -30px;
+    margin-bottom: 60px;
+}
+.box>div{
+    height: 240px;
+    padding-left: 10px;
+}
+.box>div>h4{
+    height: 30px;
+    background-image: url(img/s-bg1.png);
+    color: white;
+    line-height: 30px;
+    padding-left: 10px;
+    border-top-left-radius:5px;
+    border-bottom-right-radius: 5px; 
+}
+.box .con{
+    border: 1px solid gray;
+    padding: 10px;
+    height: 210px;
+}
+/*公司动态*/
+.con section{
+    float: right;
+    width:calc(100% - 95px);
+}
+.con h3{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.con p{
+    font-size: 0.8rem;
+}
+.con .more{
+    font-size: 0.7rem;
+    display: block;
+    text-align: right;
+}
+.con .top{
+    padding-bottom: 5px;
+    border-bottom: 1px dashed gray;
+}
+ul{
+    list-style: none;
+}
+.con .bot ul li a{
+    float: left;
+    color: black;
+}
+.con .bot ul li span{
+    float: right;
+}
+
+#gd>h4{
+    background-image: url(img/s-bg2.png);
+}
+
+/*产品与服务*/
+.fw .con img{
+    width:100%;
+    height: 80px;
+}
+.fw .con .op{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.fw .con .op a{
+    width: 45%;
+    background-color: grey;
+    margin: 10px 0px;
+    line-height: 30px;
+    text-align: center;
+    color:black;
+}
+footer{
+    line-height: 50px;
+}
+footer li{
+    margin-left: 20px;
+}
+/*调整屏幕小于992时的样式*/
+@media screen and (max-width:992px){
+    .box>div{
+        margin-bottom: 30px;
+    }
+    .box>div{
+        margin-bottom: 50px;
+    }
+   
+    footer .container-fluid .navbar-left{
+        float: none !important;
+        text-align: center;
+    }
+    footer .container-fluid .navbar-right{
+        float: none !important;
+        display: flex;
+        justify-content: center;
+    }
+}

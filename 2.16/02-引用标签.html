@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>引用</title>
+    <style>
+        cite{
+            /*字体样式，nomal标识正常*/
+            font-style: normal;
+        }
+        cite::before{
+            content: '《';
+        }
+        cite::after{
+            content: '》';
+        }
+    </style>
+</head>
+<body>
+    <!--
+        <q>:用来标识引用的内容
+        <cite>:引用的来源，例如期刊，杂志，书籍
+            默认文本为斜体
+    -->
+    <span>
+        孔子曰：<q>学而时习之</q>
+        这句话来自<cite>论语</cite>
+    </span>
+</body>
+</html>

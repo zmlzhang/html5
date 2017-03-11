@@ -1,0 +1,194 @@
+body,p,a,ul{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 1000px;
+    margin: 0px auto;
+    /*background-color: red;*/
+}
+
+#f1{
+    /*background-color: red;*/
+    height: 30px;
+}
+.ft{
+    float: right;
+}
+#f1 span{
+    font-size: 12px;
+    color: gray;
+    margin: 10px 20px;
+}
+#s2{
+    height: 80px;
+    margin: 10px 20px;
+}
+.sd{
+    float: right;
+    font-size: 12px;
+    margin-top: 10px;
+}
+b{
+    color: red;
+    font-size: 25px;
+}
+
+
+/*导航条*/
+/*nav导航条设置*/
+nav{
+    background-color: #02BDCE;
+}
+nav ul{
+    width: 1000px;
+    list-style: none;
+    margin: 0px auto;
+    /*float: left;*/
+}
+nav ul::after{
+    display: block;
+    clear: both;
+    content: '';
+    height: 0px;
+    visibility: hidden;
+}
+nav ul li{
+    width: 80px;
+    float: left;
+    margin-right: 40px;
+}
+a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    background-color: white;
+    color: red;
+    padding:10px 10px 20px 5px; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#ye{
+    width: 1500px;
+    margin-left: -200px;
+    margin: 0px 0px;
+}
+.ye{
+    width: 1500px;
+    height: 400px;
+     margin: 0px auto;
+     /*float: left;*/
+}
+
+
+/*主要内容*/
+#zy{
+    width:1000px;
+    margin: 0px auto;
+}
+#cbd{
+    width: 400px;
+    border-top: 1px solid gray;
+    margin: 40px 10px 0px 0px;
+    float: left;
+}
+#g1{
+    width: 350px;
+    margin-top: 40px;
+}
+#g1 img{
+    width: 350px;
+}
+#g1 p{
+    font-size: 18px;
+    text-indent: 2em;
+}
+/*右边*/
+#hjgg{
+    width: 560px;
+    float: right;
+    overflow: hidden;
+}
+#hjgg hr{
+    width: 430px;
+    float: right;
+}
+.b1{
+    font-size: 15px;
+    color: gray;
+}
+ /*#hjgg span:nth-child(2){
+     color: gray;
+ }*/
+ #hjgg ul{
+     margin-top: 40px;
+ }
+#hjgg li{
+    font-size: 18px;
+    line-height: 45px;
+    border-bottom: 1px dashed gray;
+}
+#hjgg ul li span{
+    float: right;
+}
+#hjgg .more{
+    float: right;
+    margin-right: 20px;
+    color: grey;
+    font-size: 20px;
+}
+
+/*流程。出版*/
+#liu{
+    width: 100%;
+    height: 350px;
+    background-color: darkgrey;
+}
+#liu section{
+    width: 1000px;
+    height: 300px;
+    margin: 0px auto;
+    /*top:10px;*/
+    padding-top: 40px;
+}
+#liu section div{
+    width: 280px;
+    height: 300px;
+}
+#w1{
+    float: left;
+    margin-left: 10px;
+}
+#tou{
+    font-size: 25px;
+    color: red;
+}
+#tou .tou{
+    font-size: 15px;
+    color: grey;
+    margin-left: 10px;
+} 
+#w2{
+    float: left;
+    margin-left: 50px;
+}
+#w3{
+    float: left;
+    margin-left: 50px;
+}
+#liu .s1{
+    float: left;
+    /*margin-top: 20px;*/
+}
+.nr{
+    font-size: 17px;
+    margin-top: 40px;
+}
+.xnr{
+    font-size: 15px;
+    color: grey;
+    margin-top: 20px;
+}

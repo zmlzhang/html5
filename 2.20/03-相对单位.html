@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相对单位</title>
+    <style>
+        #p1{
+            font-size: 2em;
+        }
+        #p1 span{
+            font-size: 2em
+        }
+        #a3{
+            width: 10em;
+            height: 10px;
+            background-color: block;
+        }section{
+            width: 8em;
+            height: 10px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!--em: 他是相对单位，(使用em设置文字或者盒子大小时，要根据父元素是font-size值
+    如果父元素的font-size值也不是一个绝对数，那么逐层网上找，并且依次相承，直到找到一个绝对值，计算出最终结果)
+    相对于计算绝对值时，是相对于父标签计算的
+    如果福标签中也是相对单位，那就是倍数的叠加，然后继续往上层找绝对值。-->
+    我是body的文本内容。
+    <P id="p1">
+        第一段内容<br>
+        <span>第二段内容</span>
+    </P>
+
+    <div id="a3">
+        <section></section>
+    </div>
+
+    <!--rem: 是相对根标签（html）的font-size值。-->
+    <P id="a4" style="font-size:1rem">
+        第二段内容
+        <span style="font-size:1.5rem">哈哈</span>
+    </P>
+
+    <main style="padding: 2rem;background-color: pink;"></main>
+</body>
+</html>

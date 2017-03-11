@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性布局之对齐方式</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        main{
+            height: 500px;
+            border: 2px solid firebrick;
+
+            /*实现弹性布局的前提:必须有一个弹性盒子*/
+            display: flex;
+
+            /*设置主轴的方向
+            row：水平方向
+            column：竖直方向
+            reverse：翻转，颠倒，反方向的*/
+            flex-direction: row;
+            /*flex-direction: row-reverse;*/
+
+
+            /*项目在主轴方向的对齐方式
+            flex-stare：开始
+            flex-end：结束
+            space-around：间距相同
+            space-between：位于两侧
+            center：居中*/
+            justify-content: flex-start;
+
+
+            /*项目在侧周方向的对齐方式*/
+            align-items: flex-start;
+
+            /*多条轴线，项目对齐方式*/
+            align-content: stretch;
+
+            /*是否换行*/
+            flex-wrap: wrap;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+
+            background-color: pink;
+            border: 1px solid black;
+
+            /*项目缩放*/
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+    </main>
+</body>
+</html>

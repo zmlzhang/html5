@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动</title>
+    <style>                                                                                                                                                                                                                                                                                                                                                    
+       ul{
+           padding: 0px;
+           list-style: none;
+           height: 100px;
+       }
+       li{
+           float: left;
+       }
+       /*
+          (1)元素浮动之后，他所在的父元素的hight会变为0
+          (2)解决的方式：直接给父元素加hight
+          (3)不推荐使用这种方法；因为一般盒子的高度都是有内容撑起的          
+       */
+    </style>
+</head>
+<body>
+    <div id="a1">
+        <ul>
+            <li>南加冰1</li>
+            <li>南加冰2</li>
+            <li>南加冰3</li>
+            <li>南加冰4</li>
+            <li>南加冰5</li>
+        </ul>
+    </div>
+    <div id="a3">
+        <ul>
+            <li>女嘉宾1</li>
+            <li>女嘉宾2</li>
+            <li>女嘉宾3</li>
+            <li>女嘉宾4</li>
+        </ul>
+    </div>
+</body>
+</html>

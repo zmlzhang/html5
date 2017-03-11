@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>报销单</title>
+    <style>
+    body,h1,p{
+        margin: 0;
+    }
+    main{
+        box-shadow: 1px 1px 10px 3px black;
+        width:25cm;
+        margin: 20px auto;
+    }
+    caption h1{
+        font-size: 22px;
+        /*text-decoration: underline;*/
+        border-bottom: 1px solid black;
+        width: 9cm;
+        margin: 10px auto 5px;
+    }
+    caption p span:nth-child(1){
+        position: relative;
+        left:40px; 
+    }
+    caption p span:nth-child(2){
+        position: relative;
+        left:100px;
+    }
+    /*大表格的样式*/
+    #t1{
+        margin: 10px auto;
+        border: 1px solid black;
+        /*去掉边框之间的间隔*/
+         border-spacing: 0;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    #t1 th,td{
+        border: 1px solid black;
+        height: 0.8cm;
+    }
+    #t1 tr:nth-child(1) th:nth-child(5){
+        width: 3.5cm;
+    }
+    #t1 tr:nth-child(7) td:nth-child(4){
+        text-align: left;
+    }
+    #t2{
+        border-spacing:0;
+        border-collapse: collapse;
+    }
+    /*#t2 td{
+        border-right:1px solid black;
+    }*/
+    #t1 tr:nth-child(9) td{
+        border: none;
+    }
+    /*!important：优先级*/
+    #t2 td{
+        border-right: 1px solid black !important;
+    }
+    #t2 tr td:nth-child(1){
+        width: 2.5cm;
+    }
+     #t2 tr td:nth-child(2){
+         width:  3.5cm;
+     }
+      #t2 tr td:nth-child(3){
+          width: 2.5cm;
+      }
+       #t2 tr td:nth-child(4){
+           width: 3.5cm;
+       }
+        #t2 tr td:nth-child(5){
+            width: 2.5cm;
+        }
+         #t2 tr td:nth-child(6){
+             border-right: none !important;
+         }
+         footer{
+             text-align: center;
+             padding-bottom:10px; 
+         }
+    </style>
+</head>
+<body>
+    <main>
+        <table id="t1">
+            <caption>
+                <h1>费&#x3000;&#x3000;用&#x3000;&#x3000;报&#x3000;&#x3000;销&#x3000;&#x3000;单</h1>
+                <p>
+                    <span>报销日期&#x3000;&#x3000;&#x3000;&#x3000;年&#x3000;&#x3000;月&#x3000;&#x3000;日&#x3000;&#x3000;&#x3000;
+                        &#x3000;&#x3000;&#x3000;</span>
+                    <span>附件&#x3000;&#x3000;&#x3000;&#x3000;张</span>
+                </p>
+            </caption>
+            <tr>
+                <th>费&#x3000;用&#x3000;项&#x3000;目</th>
+                <th>类&#x3000;别</th>
+                <th>金&#x3000;额</th>
+                <th rowspan="2">负责人（签章）</th>
+                <th rowspan="2"></th>
+            </tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <!--<td></td>
+            <td></td>-->
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2">审&#x3000;查&#x3000;意&#x3000;见</td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <!--<td></td>
+                <td></td>-->
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2">报销人（签章）</td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>报&#x3000;销&#x3000;金&#x3000;额&#x3000;合&#x3000;计</td>
+                <td></td>
+                <td></td>
+                <td>￥</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="5">核实金额（大写）&#x3000;&#x3000;佰&#x3000;&#x3000;
+                    拾&#x3000;&#x3000;万&#x3000;&#x3000;千&#x3000;&#x3000;
+                    百&#x3000;&#x3000;拾&#x3000;&#x3000;元&#x3000;&#x3000;
+                    角&#x3000;&#x3000;分&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <table id="t2">
+                        <tr>
+                            <td>借款数</td>
+                            <td></td>
+                            <td>应退金额</td>
+                            <td></td>
+                            <td>应补金额</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <footer>
+            审核&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;
+            &#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;出纳
+        </footer>
+    </main>
+</body>
+<html>

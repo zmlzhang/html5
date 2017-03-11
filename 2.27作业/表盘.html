@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表盘</title>
+    <style>
+        body{
+            height: 100%;
+            background-color: black;
+        }
+        main{
+            width: 400px;
+            height: 400px;
+            margin: 0px auto;
+            background-color: cadetblue;
+            border: 2px solid snow;
+        }
+        div{
+            width:397px;
+            height: 397px;
+            margin: 0px auto;
+            background-color: sandybrown;
+            border-radius: 50%;
+            border: 2px solid gray;
+            position: relative;
+        }
+       p{
+            width: 20px;
+            height:20px; 
+            margin: 0px;
+            background-color: navajowhite;
+            font-size: 12px;
+            text-align: center;
+        }
+        .d1{
+            position: absolute;
+            left: calc(50% - 10px);
+        }
+        .d2{
+            position: absolute;
+            top:calc(50% - 10px);
+            left: calc(100% - 20px);
+        }
+        .d3{
+            position:absolute;
+            top:calc(100% - 20px);
+            left: calc(50% - 10px);
+        }
+        .d4{
+            position: absolute;
+            top: calc(50% - 20px);
+        }
+        #zx{
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 50%;
+            position:absolute;
+            top:calc(50% - 9px);
+            left: calc(50% - 7px);
+
+            z-index: 1;
+        }
+
+
+        /*表针*/
+        .bz1{
+            width: 60px;
+            height: 5px;
+            background-color: lightblue;
+            border-radius: 5px;
+
+            position: absolute;
+            top: calc(50% - 5px);
+            left: calc(50% - 60px);
+
+            /*动画*/
+            animation-name: rotate;
+            animation-duration:36s;
+            animation-timing-function: linear; 
+            animation-iteration-count: infinite;
+            transform-origin: 60px 2.5px;
+        }
+        .bz2{
+            width: 80px;
+            height: 5px;
+            background-color: gray;
+            border-radius: 5px;
+
+            position: absolute;
+            top: calc(50% - 5px);
+            left: calc(50% - 80px);
+
+            /*动画*/
+            animation-name: rotate;
+            animation-duration:6s;
+            animation-timing-function: linear; 
+            animation-iteration-count: infinite;
+            transform-origin: 80px 2.5px;
+        }
+        .bz3{
+            width: 100px;
+            height: 5px;
+            background-color: yellow;
+            border-radius: 5px;
+            position: absolute;
+            top: calc(50% - 5px);
+            left: calc(50% - 100px);
+
+            /*动画*/
+            animation-name: rotate;
+            animation-duration:1s;
+            animation-timing-function: linear; 
+            animation-iteration-count: infinite;
+            transform-origin: 100px 2.5px;
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+        <p class="d1">12</p>
+        <p class="d2">3</p>
+        <p class="d3">6</p>
+        <p class="d4">9</p>
+
+        <div id="zx"></div>
+
+        <section class="bz1"></section>
+        <section class="bz2"></section>
+        <section class="bz3"></section>
+        </div3
+    </main3
+</body>
+</html>

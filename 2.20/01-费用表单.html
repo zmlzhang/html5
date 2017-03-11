@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>报销单</title>
+    <style>
+        body,h1,p{
+            margin: 0px;
+            padding: 0px;
+        }
+        main{
+            box-shadow: 1px 1px 6px 3px black;
+            width:20cm; 
+            margin: 20px auto;
+        }
+        caption h1{
+            font-size: 25px;
+            text-align:center;
+
+            /*margin: 10px 0px 5px; */
+        }
+        #a2{
+            margin: 10px auto;
+            border: 1px solid rebeccapurple;
+
+            border-spacing: 0px;
+            border-collapse: collapse;
+
+            text-align: center;
+        }
+        th,td{
+            /*width: 130px;*/
+            height: 30px;
+            border: 1px solid rebeccapurple;
+
+            font-size: 15px;
+        }
+        #a1{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+        #a2 tr:nth-child(1) th:nth-child(5){
+            width: 3.5cm;
+            padding: 0px;
+        }
+        #a2 th:nth-child(4){
+            width: 2.5cm;
+        }
+        #a2 tr:nth-child(7) td:nth-child(4){
+            text-align: left;
+        }
+
+        #a1 tr td:nth-child(1){
+            width:1.5cm;
+        }
+        #a1 tr td:nth-child(2){
+            width: 2.5cm;
+        }
+        #a1 tr td:nth-child(3){
+            width:2cm;
+        }
+        #a1 tr td:nth-child(4){
+            width: 2.5cm;
+        }
+        #a1 tr td:nth-child(5){
+            width:2cm;
+        }
+        #a1 tr td:nth-child(6){
+           border-right: none !important;
+        }
+        #a2 tr:nth-child(9) td{
+        border: none;
+        }
+        /*!important：优先级*/
+        #a1 td{
+        border-right: 1px solid rebeccapurple !important;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table id="a2">
+            <caption>
+                <h3><u><pre>  费  用  报  销  单  </pre></u></h1>
+                <p>
+                    <span><pre>  报销日期         年   月   日                附件    张</pre></span>
+                </p>
+            </caption>
+            <tr>
+                <th>费用项目</th>
+                <th>类别</th>
+                <th>金额</th>
+                <th rowspan="2">负责人签章</th>
+                <th rowspan="2"></th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <!--<td></td>-->
+                <!--<td></td>-->
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2"> 审 查 意 见</td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <!--<td></td>-->
+                <!--<td></td>-->
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2">报销人（签章）</td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <!--<td></td>-->
+                <!--<td></td>-->
+            </tr>
+
+            <!--报销金额  第七行-->
+            <tr>
+                <td>报销金额合计</td>
+                <td></td>
+                <td></td>
+                <td>￥</td>
+                <td></td>
+            </tr>
+
+            <!--第八行-->
+            <tr>
+                <td colspan="5"><pre>核实金额（大写）   佰   十    万    千    佰   十   元    角  分</pre></td>
+            </tr>
+
+            <tr> 
+                <td colspan="5">
+                    <table id="a1">
+                        <tr>
+                            <td>借款数</td>
+                            <td></td>
+                            <td>应退金额</td>
+                            <td></td>
+                            <td>应补金额</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <footer>
+            <pre>                          审核                                     出纳     </pre>
+        </footer>
+    </main>
+</body>
+</html>

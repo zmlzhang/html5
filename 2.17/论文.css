@@ -1,0 +1,87 @@
+body{
+    margin: 0px;
+    background-color: gray;
+}
+article{
+    /*定宽居中，对盒子进行处理*/
+    width: 1000px;
+    margin: 0px auto;
+    background-color: white;
+
+    /*height: 200px;*/
+    border: 1px solid black;
+
+    font-family: '宋体';
+    padding: 20px 100px;
+    box-sizing: border-box;
+}
+header{
+    /*text-align: center;*/
+}
+h1{
+     text-align: center;
+     border-bottom: 10px;
+}
+div{
+     text-align: center;
+}
+address{
+    font-style: normal;
+    text-align: center;
+}
+address strong{
+    font-size: 20px;
+    font-weight:normal; 
+}
+addr{
+    text-decoration: none;
+}
+header #a1{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
+}
+header #a1::before{
+    content: '摘要：';
+    font-weight: bold;
+}
+header #a1 cite::before{
+    content: '“';
+}
+header #a1 cite::after{
+    content: '”';
+}
+header #a2::before{
+    content: '关键词：';
+    font-weight: bold;
+}
+header #a3::before{
+    content: '中图分类号：';
+    font-weight: bold;
+}
+header[lang=en]{
+    margin-top: 30px;
+    font-size: 20px;
+}
+header[lang=en] #a1::before{
+    content: 'Abstract:';
+    font-weight: bold;
+}
+header[lang=en]  #a2::before{
+    content: 'Key words: ';
+    font-weight: bold;
+}
+footer h6{
+    font-size: 16px;
+}
+footer ol{
+    padding: 0px;
+    list-style: none;
+    counter-reset: h6;
+}
+footer ol li{
+    counter-increment: h6;
+}
+li::before{
+    content: '['counter(h6)']'
+}

@@ -1,0 +1,6 @@
+h1:nth-of-type(1) {
+  color: red;
+}
+h1:last-of-type {
+  color: red;
+}

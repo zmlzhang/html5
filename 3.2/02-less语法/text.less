@@ -1,0 +1,44 @@
+// 变量:定义一个变量，在样式表中调用
+@bg-coolor: blue;
+button{
+    background-color: @bg-coolor;
+}
+
+// 嵌套：
+section{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+
+    p{
+        font-size: 20px;
+    }
+
+    // 取；表示section。表示当前标签。
+    &:hover{
+        background-color: @bg-coolor;
+    }
+}
+
+// 混入
+.co(@ra:5px){
+    border-radius: @ra;
+}
+div{
+    width:400px;
+    height: 400px;
+    background-color: @bg-coolor;
+    .co(10px);
+
+    // 函数的应用
+    color: darken(red,10%);
+}
+
+
+input{
+    color: pink;
+}
+// div 在继承input的样式
+div:extend(input){
+        // font-size: 30px;
+}

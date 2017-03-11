@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="张漫丽">
+    <title>模态框</title>
+    <link href="bs/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+         Launch demo modal
+    </button>
+
+    <!--
+        将.modal 的id 与 Button的data-target属性绑定
+        在一起，可以实现点击按钮弹出模态框
+    -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <!--modal-dialog: 布局上实现定宽居中-->
+        <div class="modal-dialog" role="document">
+
+            <!--modal-content:白色区域 分为三部分-->
+            <div class="modal-content">
+
+                <!--modal： 头部-->
+                <div class="modal-header">
+                    <!--指定是关闭按钮-->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+
+                <!--内容区域-->
+                <div class="modal-body">
+                    ...
+                </div>
+
+                <!--取消 保存按钮-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="bs/js/jquery.min.js"></script>
+    <script src="bs/js/bootstrap.min.js"></script>
+</body>
+
+</html>

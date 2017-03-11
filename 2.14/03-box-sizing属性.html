@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box属性</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: mediumpurple;
+
+            padding: 10px;
+            border: 20px solid peachpuff;
+
+            box-sizing: border-box;
+            /*
+               如果设置box-sizing：border-box；那么，此时
+               w、h指的不在是内容区的宽和高，而是整个盒子的宽高
+
+               盒模型中内容区域的宽 = w - p - b
+               盒模型中内容区域的高 = h - p - b
+
+               box-sizing: content-box
+            */
+        }
+    </style>
+</head>
+<body>
+    <div>导航条</div>
+</body>
+</html>

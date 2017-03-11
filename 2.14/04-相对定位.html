@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相对定位</title>
+    <style>
+        /*找到span的副标签的第二个子标签，
+        如果该标签名字是span那么{}内的样式生效*/
+        span:nth-child(2){
+            background-color: rebeccapurple;
+
+            /*
+                相对定位:相对于自己原来的位置进行位置的调整
+                一般我们使用relative微调元素的位置
+            */
+            position: relative;
+            top:40px;
+        }
+    </style>
+</head>
+<body>
+   <span>hello world1</span>
+   <!--<p>hellow</p>-->
+   <span>hello world2</span>
+   <span>hello world3</span>
+</body>
+</html>

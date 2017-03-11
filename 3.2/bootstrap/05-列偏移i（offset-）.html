@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="author" content="张漫丽">
+        <title>列偏移</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .container{
+                height: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" style="background-color: black">
+                <div class="col-md-3" style="background-color: red">111111</div>
+                <!---offset:让某一块内容在当前行上 向右偏移多少行-->
+                <div class="col-md-4 col-md-offset-5" style="background-color: blue">22222222</div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

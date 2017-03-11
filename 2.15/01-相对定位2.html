@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相对定位2</title>
+    <style>
+         span:nth-child(2){
+             position: relative;
+             left: 100px;
+         }
+    </style>
+</head>
+<body>
+    <!--
+        "形影分离"：相对定位的元素所占据的位置还是原来的位置，
+        我们看到的只是钙元素的‘影子’。
+
+        相对定位的应用场景：（1）·微调元素位置
+             （2）·“子绝父相”，给绝对定位的元素做参考
+    -->
+    <span>中华</span>
+    <span>人民</span>
+    <span>共和国</span>
+</body>
+</html>

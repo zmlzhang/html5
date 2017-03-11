@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联系</title>
+    <style>
+        body{
+            counter-reset: f1;
+        }
+        figure{
+            counter-increment: f1
+        }
+        figcaption::before{
+            content: "图"counter(f1)".";
+        }
+        /*属性选择器*/
+        /*找到属性取值为lang=en的figcaption*/
+        figcaption[lang=en]::before{
+            content: 'fig'counter(f1)'.'
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <img src="jiang.jpg" alt="僵小鱼">
+        <figcaption>僵小鱼</figcaption>
+        <figcaption lang="en">jiang</figcaption>
+    </figure>
+    <figure>
+        <img src="jiang.jpg" alt="僵小鱼">
+        <figcaption>僵小鱼</figcaption>
+        <figcaption lang="en">jiang</figcaption>
+    </figure>
+    <figure>
+        <img src="jiang.jpg" alt="僵小鱼">
+        <figcaption>僵小鱼</figcaption>
+        <figcaption lang="en">jiang</figcaption>
+    </figure>
+    <figure>
+        <img src="jiang.jpg" alt="僵小鱼">
+        <figcaption>僵小鱼</figcaption>
+        <figcaption lang="en">jiang</figcaption>
+    </figure>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>认识浮动</title>
+    <style>
+       #box1{
+           width:100px;
+           height:100px;
+           background-color: red;
+
+           float: left;
+       }
+       #box2{
+           width: 300px;
+           height: 300px;
+           background-color: green;
+       }
+    </style>
+</head>
+<body>
+    <!--
+        1.浮动分为左浮动和有浮动
+        2、浮动是用来调整页面布局的
+        3、浮动的元素会脱标，同时该元素性质变成行内块标签
+        4、浮动的元素会相互贴靠。
+    -->
+    <div id="box1"></div>
+    <div id="box2"></div>
+
+    <!--
+        1.img也属于文本，想要img居中可以设置他的福标签;text-align:center
+        2.如果浮动的元素后面跟随的有文本那么文本内容会绕着浮动元素走“字围效果”
+    -->
+    <img src="1.jpg" alt="僵小鱼" style="float: left">
+    <p style="background-color: yellow">
+        1zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo 
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+        zhonghuarenningongheguo zhonghuarenningongheguo zhonghuarenningongheguo
+
+    </p>
+</body>
+</html>

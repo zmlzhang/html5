@@ -1,0 +1,57 @@
+.navbar{
+    margin: 0px;
+}
+#bs1 ul li a:hover{
+    background-color: wheat;
+    border-radius: 10px;
+}
+.tui{
+    margin-right: 80px;
+}
+
+.kh{
+    margin-top: 50px;
+    font-size: 22px;
+    line-height: 50px;
+    background-color: lightgray;
+}
+
+
+/*标签页*/
+#da{
+    margin-top: 10px;
+}
+#tian{
+    background-color: green;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+#sou{
+    background-color: orange;
+    border-radius: 10px;
+}
+table{
+    margin-top: 20px;
+    border: 1px solid gray;
+}
+th{
+    background-color: lightgray;
+}
+th,td{
+    border: 1px solid gray;
+}
+td{
+    width: 200px;
+    line-height: 40px;
+}
+#tjkh{
+    margin-top: 10px;
+    background-color: lightgreen;
+}
+#sou{
+    margin-top: 10px;
+    background-color: palegoldenrod;
+}
+.suo{
+    background-color: green;
+}

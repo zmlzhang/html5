@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="张漫丽">
+    <title>宝钢网页</title>
+    <link href="bs/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="宝钢.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!--1.导航条的logo和汉堡包菜单键  -->
+            <div class="navbar-header">
+                <!--窗口缩小时，出现在右侧的 汉堡包菜单键-->
+                <!--data-*: 这些属性都是有关页面交互的。
+          data-toggle：事件的触发
+          data-target：事件的目标对象，这个属性一般通过id与导航条中的选项绑定在一起-->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-nav-item" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <!--展示在导航条左侧的logo-->
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+            </div>
+
+            <!--2. 导航条的所有选项 -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="my-nav-item">
+                <!--2-1.  -->
+                <ul class="nav navbar-nav">
+                    <!--.active:  默认被选中的一个选项-->
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">媒体中心</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">业务板块</a></li>
+                    <li><a href="#">产品服务</a></li>
+                </ul>
+
+                <!--2-2.表单  -->
+                <form class="navbar-form navbar-right hidden-sm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default ">Submit</button>
+                </form>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!--banner-->
+    <div class="row hidden-xs">
+        <img src="img/banner.png" class="img-responsive" alt="Responsive image">
+    </div>
+
+    <!--内容-->
+    <div class="container">
+        <div class="row" id="nr">
+
+            <div class="col-sm-4 col-xs-12">
+                <div id="tu1">公司背景</div>
+                <div class="clearfix">
+                    <img src="img/news.png" alt="new" id="news">
+                    <p>
+                        <strong>足额呵呵戹低汇付宝恒</strong><br> 足额呵呵戹低汇付宝恒建街市上才能设计师想 足额呵呵戹低汇付宝恒建街市上才能设计师想 足额呵呵戹低汇付宝恒建街市上才能设计师想
+                    </p>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <ul>
+                        <li>
+                            <p>足额呵呵戹低汇付宝恒建街市上</p>
+                            <span>2012-12-12</span>
+                        </li>
+                        <li>
+                            <p>足额呵呵戹低汇付宝恒建街市</p>
+                            <span>2012-0-12</span>
+                        </li>
+                        <li>
+                            <p>足额呵呵戹低汇付宝恒建街市</p>
+                            <span>201-012-0</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-xs-12">
+                <div id="tu2">研究与观点</div>
+                <div class="se clearfix">
+                    <h4>绝对id冻死计算机加开水绝对</h4>
+                    <p>
+                        疾风冻死好四死家分店傲杰骄傲卡死爱妃电脑好的
+                        疾风冻死好四死家分店傲杰骄傲卡死爱妃电脑好的
+                    </p>
+                    <p id="a1">jsskkd</p>
+                </div>
+                <hr>
+                <div class="se clearfix">
+                    <h4>绝对id冻死计算机加开水绝对</h4>
+                    <p>
+                        疾风冻死好四死家分店傲杰骄傲卡死爱妃电脑好的
+                        疾风冻死好四死家分店傲杰骄傲卡死爱妃电脑好的
+                    </p>
+                    <p id="a1">jsskkd</p>
+
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-xs-12">
+                <div id="tu3">产品服务</div>
+                <div class="se">
+                    <img src="img/service.png" alt="">
+                </div>
+                <ul>
+                    <li>
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        碳钢系列
+                    </li>
+                    <li>
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        特钢系列
+                    </li>
+                    <li>
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        不锈钢系列
+                    </li>
+                    <li>
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        硅钢系列
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="bs/js/jquery.min.js"></script>
+    <script src="bs/js/bootstrap.min.js"></script>
+</body>
+
+</html>

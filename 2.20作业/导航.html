@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+    <style>
+        /*选择器，选择器..这种自粘式我们称之为：并集选择器*/
+        body,p{
+            margin: 0px;
+        }
+        .nav{
+            width: 100%;
+            height: 80px;
+
+            position: fixed;
+            top: 0px;
+
+            border-bottom: 1px solid gray;
+
+            /*给盒子加阴影：
+            1.x-offset:阴影水平方向的便宜量。正值偏右
+            2.y-offset:阴影垂直方向的偏移量，正值往下偏
+            3.阴影的模糊半径：值越大边缘越模糊。
+            4.阴影扩展半径：值越大向外扩展的越大。
+            5.阴影颜色。
+            
+            如何给文字加阴影？        */
+            box-shadow: 0 1px 1px 0px grey; 
+
+            background-color: white;
+
+            z-index: 1;
+        }
+        .container{
+            width: 900px;
+            /*height: 80px;*/
+            /*定宽居中*/
+            margin: 0px auto;
+            padding: 20px 0px;
+            /*为了让spanclassitem相
+            对于container进行定位*/
+            position: relative;
+        }
+        .nav .container #logo{
+            height: 40px;
+            /*display: block;*/
+            z-index: 1;
+        }
+        .container .item{
+            position: absolute;
+            right: 0px;
+            top: 20px;
+            /*行高*/
+            line-height: 40px;
+
+            list-style: none;
+        }
+        li{
+            float: right;
+            margin-right: 15px;
+            font-size: 20px;
+
+            margin-top: -15px;
+        }
+        li a:nth-child(2){
+            float: right;
+            margin-right: 15px;
+            font-size: 22px;
+
+            margin-top: -15px;
+        }
+        .container a{
+            color: black;
+            text-decoration: none;
+        }
+        #header{
+            margin-top: 80px;
+            width: 100%;
+        }
+        main{
+            width: 900px;
+            margin: 0px auto;
+
+            margin-top: 20px;
+        }
+        p{
+            color: gray;
+            line-height: 25px;
+        }
+        /*伪元素选择器  */
+        p::before{
+            /*content,表示前缀的内容*/
+            content: '“';
+            font-size: 20px;
+        }
+        p::after{
+            content: '”';
+            font-size: 20px;
+        }
+        section{
+            margin-top: 30px;
+        }
+        h2{
+            color: sandybrown;
+        }
+        section .a1{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        section .a2{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        section .a3{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        section .a5{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .bg{
+            background-image: url(images/classmates.jpg);
+            background-repeat: no-repeat;
+            height: 600px;
+
+            position: relative;
+
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .bg #c1{
+            width: 200px;
+            height: 200px;
+            /*剪切成员*/
+            border-radius: 50%;
+            overflow:hidden; 
+
+            position: absolute;
+            top:200px;
+            left: 100px;
+        }
+        .bg #c2{
+            width: 250px;
+            height: 250px;
+            /*剪切成员*/
+            border-radius: 50%;
+            /*overflow:hidden; */
+
+            position: absolute;
+            top: 180px;
+            left: 350px;
+        }
+        .bg #c3{
+            width: 200px;
+            height: 200px;
+            /*剪切成员*/
+            border-radius: 50%;
+            overflow:hidden; 
+
+            position: absolute;
+            top:200px;
+            left: 650px;
+        }
+        #d::before{
+            content: ''
+        }
+        #d::after{
+            content: ''
+        }
+        hr{
+            border: none;
+            height: 1px;
+            background-color: black;
+            margin-top: 20px;
+        }
+        #d{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="container">
+            <img src="images/logo.png" alt="logo" id="logo">
+            <ul class="item">
+                <li><a href="#w">关于我</a></li>
+                <li><a href="#tx">我的同学</a></li>
+                <li><a href="#dx">我的大学</a></li>
+                <li><a href="#jx">我的家乡</a></li>
+                <li><a href="#html5">html5</a></li>
+                <li><a href="#">首页</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--2.横幅-->
+    <img src="images/header.jpg" alt="一个树" id="header">
+    <!--主要内容-->
+    <main>
+        <p>
+            新华社北京2月14日电题：坚决维护党
+            中央权威——二论习近平总书记在省部级学
+            习贯彻十八届六中全会精神专题研讨班重
+            要讲话 新华社评论员 一个国家、一个民
+        </p>
+        <!--section 区域-->
+        <section id="html5">
+            <h2>&#9646;html5</h2>
+            <img src="images/html5.jpg" alt="html" class="a1">
+            <p>
+                新华社北京2月14日电题：坚决维护党
+                中央权威——二论习近平总书记在省部级学
+                习贯彻十八届六中全会精神专题研讨班重
+                要讲话 新华社评论员 一个国家、一个民
+            </p>
+        </section>
+        <section id="jx">
+            <h2>&#9646;我的家乡</h2>
+            <img src="images/hometown.jpg" alt="家乡图片" class="a2">
+            <p>
+                新华社北京2月14日电题：坚决维护党
+                中央权威——二论习近平总书记在省部级学
+                习贯彻十八届六中全会精神专题研讨班重
+                要讲话 新华社评论员 一个国家、一个民
+            </p>
+        </section>
+        <section id="dx">
+            <h2>&#9646;我的大学</h2>
+            <img src="images/lzu.jpg" alt="大学图片" class="a3">
+            <p>
+                新华社北京2月14日电题：坚决维护党
+                中央权威——二论习近平总书记在省部级学
+                习贯彻十八届六中全会精神专题研讨班重
+                要讲话 新华社评论员 一个国家、一个民
+            </p>
+        </section>
+        <section id="tx">
+            <h2>&#9646;我的同学</h2>
+            <div class="bg">
+                <img src="images/lry.jpg" alt="" id="c3">
+                <img src="images/ldh.jpg" alt="" id="c2">
+                <img src="images/wf.png" alt="" id="c1">
+            </div>
+            <p>
+                新华社北京2月14日电题：坚决维护党
+                中央权威——二论习近平总书记在省部级学
+                习贯彻十八届六中全会精神专题研讨班重
+                要讲话 新华社评论员 一个国家、一个民
+            </p>
+        </section>
+         <section id="w">
+            <h2>&#9646;关于我</h2>
+            <img src="images/HomePage.jpg" alt="我的图片" class="a5">
+            <p>
+                新华社北京2月14日电题：坚决维护党
+                中央权威——二论习近平总书记在省部级学
+                习贯彻十八届六中全会精神专题研讨班重
+                要讲话 新华社评论员 一个国家、一个民
+            </p>
+        </section>
+        <!--水平线-->
+        <hr>
+        <p id="d">&copy; 智游教育 &#x3000;&#x3000;&#x3000;&#x3000;123456&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;河南通信产业园&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;一大街</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,153 @@
+html{
+    height: 100%；
+}
+body{
+    width: 100%;
+    border: 3px solid rosybrown;
+}
+.wenben{
+    margin-top: 10px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: greenyellow;
+    border-top: 1px solid black;
+}
+#tc img{
+    width: 100%;
+}
+
+/*主要内容*/
+.clearfix{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*左边*/
+#left{
+    margin-top: 40px;
+    position: relative;
+}
+#left div a img{
+    width:350px;
+    height: 220px;
+    padding: 10px;
+    margin: 30px auto;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+#c{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+    top: 90px;
+    left: 347px;
+}
+#c2{
+    position:absolute;
+    top: 300px;
+}
+#c3{
+    position:absolute;
+    top: 580px;
+}
+#c4{
+    position:absolute;
+    top: 860px;
+}
+#c5{
+    position:absolute;
+    top: 1140px;
+}
+
+/*中间*/
+#zj{
+    position:relative;
+}
+#zj #xian{
+    height: 100%;
+    width:10px;
+}
+
+
+
+#a{
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+    top: 120px;
+    left: -10px;
+}
+#a2{
+    position:absolute;
+    top:60px;
+}
+#a3{
+    position:absolute;
+    top:290px;
+}#a4{
+    position:absolute;
+    top:350px;
+}#a5{
+    position:absolute;
+    top:570px;
+}#a6{
+    position:absolute;
+    top:630px;
+}#a7{
+    position:absolute;
+    top:850px;
+}#a8{
+    position:absolute;
+    top:910px;
+}
+#a9{
+    position:absolute;
+    top:1130px;
+}#a10{
+    position:absolute;
+    top:1190px;
+}
+
+
+/*右边*/
+#right{
+    margin-top: 80px;
+    position:relative;
+}
+#right div a img{
+    width:350px;
+    height: 220px;
+    padding: 10px;
+    margin: 30px auto;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+#b{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+    top: 110px;
+    left: -16px;
+}
+#b2{
+    position:absolute;
+    top: 300px;
+}
+#b3{
+    position:absolute;
+    top: 580px;
+}
+#b4{
+    position:absolute;
+    top: 860px;
+}
+#b5{
+    position:absolute;
+    top: 1140px;
+}
+

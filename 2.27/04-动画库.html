@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画库</title>
+    <style>
+        section{
+            width: 600px;
+            height: 600px;
+            margin: 0px auto;
+            background-color: lightgreen;
+        }
+        span{
+            width: 400px;
+            height: 70px;
+            font-size: 60px;
+            color: sandybrown;
+
+            position: absolute;
+            top:calc(50% - 35px);
+            left: calc(50% - 200px);
+
+            /*设置旋转的参考点*/
+            transform-origin: 0% 100%;
+
+            animation: t 2s;
+        }
+        @keyframes t{
+            from{
+                transform: rotate(-60deg);
+                opacity: 0;
+            }
+            to{
+                transform: rotate(0deg);
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="animate.css">
+</head>
+<body>
+    <section>
+        <span class="animated rotateInDownLeft">Animation.css</span>
+    </section>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动练习</title>
+    <style>
+        body,ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        nav{
+            /*给导航条定位*/
+            position: fixed;
+            top:0px;
+
+            background-color: hotpink;
+            width: 100%;
+        }
+        /*交集选择器：选择器选择器*/
+        div.denter{
+            /*定宽居中*/
+            width: 900px;
+            margin: 10px auto;
+            background-color: navajowhite;
+
+            height: 60px;
+        }
+        ul{
+            list-style: none;
+            float: right;
+            margin-top: 12px;
+        }
+        li{
+            float: left;
+            margin-right: 20px;
+        }
+        img{
+            height: 60px;
+            float:left;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--nav：navigation 导航，语义化标签-->
+    <nav>
+        <div class="denter">
+            <img src="images/logo.png" alt="logo">
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+                <li>item4</li>
+                <li>item5</li>
+                <li>item6</li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

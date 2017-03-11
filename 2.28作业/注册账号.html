@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册账号</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            margin: 0px;
+        }
+        div{
+            width: 5px;
+            height: 50px;
+            background-color: lightseagreen;
+            margin: 10px 10px 0px;
+            display: inline-block;
+        }
+        span{
+            font-size: 18px;
+            position: absolute;
+            top:22px;
+        }
+        hr{
+            width: calc(100% - 20px);
+            margin: 0px 10px;
+        }
+        main{
+            width: 800px;
+            margin: 0px auto;
+            /*background-color: gray;*/
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <span>注册账号</span><hr>
+    
+    <main>
+        <from>
+            <!--昵称-->
+            <label for="" id="ncl">昵称：</label>
+            <input type="text" id="nc" required="required"><br>
+
+            <!--密码-->
+            <label for="" id="ncl">密码：</label>
+            <input type="text" id="nc"><br>
+            <label for="">确认密码：</label>
+            <input type="text" id="nc"><br>
+
+            <!--单选-->
+            &#X3000;&#X3000;性别 :&nbsp;
+            <input type="radio" id="a" checked>男
+            <input type="radio" id="a" >女<br>
+
+            <!--生日-->
+            &#X3000;&#X3000;生日 :&nbsp;&nbsp;
+            <select name="" id="sr1">
+                <option value="公历" selected>公历</option>
+                <option value="阳历">阳历</option>
+            </select>
+            <select name="" id="sr2">
+                <option value="年" selected>年</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+            </select>
+
+             <select name="" id="sr1">
+                <option value="月" selected>月</option>
+                <option value="1995">1</option>
+                <option value="1996">6</option>
+                <option value="1997">7</option>
+                <option value="1998">8</option>
+                <option value="1999">9</option>
+            </select>
+
+             <select name="" id="sr1">
+                <option value="日" selected>日</option>
+                <option value="1995">5</option>
+                <option value="1996">6</option>
+                <option value="1997">7</option>
+                <option value="1998">8</option>
+                <option value="1999">9</option>
+            </select><br>
+
+            <!--所在地-->
+            &#X3000;所在地：
+            <select name="" id="szd">
+                <option value="中国" selected>中国</option>
+                <option value="">外国</option>
+            </select>
+
+            <select name="" id="szd">
+                <option value="">河南</option>
+                <option value="">杭州</option>
+                <option value="">上海</option>
+            </select>
+            <select name="" id="szd">
+                <option value="">郑州</option>
+                <option value="">开封</option>
+                <option value="">兰考</option>
+            </select><br>
+
+
+            <!--验证码-->
+            验证码：<br>
+
+
+            <!--手机号码-->
+            手机号码：
+            <input type="text" id="sjhm"><br>
+            <p>忘记密码是，可通过该手机号码找回密码</p>
+            <p class="zt">请输入中国大陆手机号码（不含小灵通）</p>
+            <p class="zt">其他地区号码<a href="">点击这里</a></p><br>
+
+            <!--获取短信验证码-->
+            <input id="c" type="text" class="hq">
+            <input class="c" type="button" value="获取短信验证码"><br>
+
+            <!--多选-->
+            <input class="d" type="checkbox" >同时开通qq空间
+            <input type="checkbox">我已阅读并同意相关<br>
+
+
+            <!--提交-->
+            <input type="button" value="提交注册" class="tj">
+        </from>
+    </main>
+</body>
+</html>

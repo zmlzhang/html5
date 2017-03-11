@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        main{
+            width:600px;
+            height: 1000px;
+            margin: 0px auto;
+            /*background-image: url(img/img.jpg);*/
+            /*background-repeat: no-repeat;*/
+            /*background-size: 600px 1500px;*/
+            background-color: #C5C9CE;
+            /*opacity: 0.9;*/
+        }
+        div{
+            width: 600px;
+            height: 40px;
+            /*background-color: lightblue;*/
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            width: 70px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        button:nth-child(3){
+            margin-right: 18px;
+        }
+        div:nth-child(2){
+            width: 600px;
+            height: 500px;
+        }
+        main div img{
+            width: 150px;
+            height: 150px;
+            /*background-position: 50% 50%;*/
+            border-radius: 100%;
+            position: absolute;
+            top:200px;
+            left: 275px;
+        }
+        div:nth-child(3){
+            width: 300px;
+            height: 200px;
+            margin: 0px auto;
+        }
+        input{
+            width: 200px;
+            height:25px;
+            background-color: #C5C9CE;
+            
+        }
+        #in{
+            margin-top: 40px;
+        }
+        hr{
+            width: 300px;
+            height: 2px;
+            margin: 3px auto;
+            border: 0px;
+            background-color: white;
+        }
+
+        #dl{
+            width:200px;
+            height: 80px;
+            margin: 0px auto;
+        }
+        #dl{
+            width:150px; 
+            height: 40px;
+            background-color: limegreen;
+            border-radius: 5px;
+            border: 0px;
+        }
+        span{
+            font-size: 15px;
+            color: snow;
+            margin-left: 60px;
+            /*text-align: center;*/
+        }
+        #qt{
+            width: 500px;
+            margin: 40px auto;
+            font-size: 18px;
+            text-align: center;
+        }
+        #qt img{
+            width: 80px;
+            height: 80px;
+            margin: 20px 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <button>返回</button>
+            <button>登录</button>
+            <button>注册</button>
+        </div>
+
+        <div>
+            <img src="img/1.jpg" alt="僵小鱼">
+        </div>
+
+
+        <div>
+            <from>
+                <label for="">账号:</label>
+                <input type="text" ><br>
+                <hr>
+                <label for="">密码:</label>
+                <input type="text"  id="in"><br>
+                <hr>
+            </from> 
+        </div>
+
+        <section id="dl">
+            <button id="dl">登陆</button><br>
+            <span>忘记密码？</span>
+        </section>
+
+        <section id="qt">
+            其他登录方式<br>
+            <img src="img/weibo.png" alt="weibo">
+            <img src="img/qq.png" alt="qq">
+            <img src="img/weixin.png" alt="weixin">
+        </section>
+    </main>
+</body>
+</html>

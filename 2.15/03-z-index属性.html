@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+             margin: 0px;
+        }
+        .nav{
+            width: 100%;
+            height: 50px;
+            background-color: pink;
+
+            position: fixed;
+            top:0px;
+
+            /*
+            如果页面中有多个元素定位并且这些定位的元素
+            位置出现重接=叠现象，那么如果想改变他们之间
+            的层叠关系，可以使用z-index属性进行调整。
+                z-index:调整元素的堆叠顺序，
+                他的值越大，该元素所在的堆叠顺序就越高
+
+                只对定位的元素产生作用。
+            */
+            z-index: 1;
+        }
+        main{
+            height: 5000px;
+            background-color: lightblue;
+        }
+        p{
+            background-color: plum;
+            position: relative;
+            top: 200px;
+            left: 100px;
+        }
+        /*#box1{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+
+            position: absolute;
+            top:100px;
+            left: 200px;
+        }
+        #box2{
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            
+            position: absolute;
+            top:100px;
+            left: 180px;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="nav"></div>
+    <main>
+        <p>
+            jdjdkkn jnlknalkkmxjjj
+            jkmlkmdlmlhva;sihjb;nf
+            hajkoisjei'lkcmdjivjvj
+            jijvoijorijdkcn'xjdslj
+            hfdjvoisjvoijxokwerjhv
+            jsjivjsjkfcjhhkklvghug
+            jsiojvsejfvj'pofkj'wfv
+            visjvseofjkvnuhurheoij
+            ofakokfopakvpofkoakopk
+            jfrijpo'vk'poks'pvfcik
+
+        </p>
+        <!--<div id="box1"></div>
+        <div id="box2"></div>-->
+    </main>
+</body>
+</html>

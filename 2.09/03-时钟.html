@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时钟</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            margin: 0px;
+
+            /*设置body为弹性盒子*/
+            display:flex;
+            /*设置body中的子元素<main>竖直方向，水平方向居中*/
+            align-items: center;
+            justify-content: center;
+            /*文本居中*/
+            
+            text-align: center;
+            font-size: 50px;
+            color:lightpink;
+
+            background-color:bisque;
+        }
+        main{
+            background-color:lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="time">14:30:42</div>
+        <div id="date">2017年2月9日 周四</div>
+    </main>
+    <script> 
+        //定义一个函数update，
+        //该函数的主要功能是获取当前时间
+        //并且将获取的时间显示在页面上
+        function update(){
+            // 获取当前时间日期对象
+            //now代表创建一个对象
+            var now = new Date()
+            console.log(now)
+
+            //分别获取 时、分、秒
+            var hour = now.getHours()
+            var minute = now.getMinutes()
+            var seconds = now.getSeconds()
+
+            //如果获取到的时分秒小于10，
+            //那么应该在这个值的前面添加一个0
+            if(hour < 10){
+                hour ='0' + hour
+            }
+            if(minute < 10){
+                minute  ='0' + minute 
+            }
+            if(seconds < 10){
+                seconds ='0' + seconds
+            }
+
+            //将时分秒拼接到一起，修改第一个div中的文本内容
+            var str = hour + ":" + minute + ":" + seconds
+            console.log(str)
+
+            //根据id找到第一个div
+            var timeDiv= document.getElementById('time')
+            //修改div中的文本内容
+            timeDiv.innerText = str
+
+            //获取当前的年月日
+            var year = now.getFullYear()
+            var month = now.getMonth() + 1 //0~11
+            var date = now.getDate()
+
+            var week =now.getDay() //0~6（0表示周日）
+            if(week == 0){
+                week='周日'
+            }
+              if(week == 1){
+                week='周一'
+            }
+              if(week == 2){
+                week='周二'
+            }
+              if(week == 3){
+                week='周三'
+            }
+              if(week == 4){
+                week='周四'
+            }
+              if(week == 5){
+                week='周五'
+            }
+              if(week == 6){
+                week='周六'
+            }
+
+            //将获取到年月日星期拼接到一起
+            var dateStr = year + '年' + month + '月' + date + '日' + '    '+ week
+
+            //根据id找到第一个div
+            var dateDiv = document.getElementById('date')
+            //修改div中的文本内容
+            dateDiv.innerText = dateStr
+        }
+        update()
+
+        //每间隔一秒钟调用一次update函数，让时间持续更新
+        //1秒 = 1000 毫秒
+        setInterval(update,1000)
+    </script>
+    
+</body>
+</html>

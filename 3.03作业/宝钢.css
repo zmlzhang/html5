@@ -1,0 +1,54 @@
+.navbar{
+   margin-bottom: 0px; 
+}
+.navbar-brand img{
+    margin-top: -15px;
+}
+.navbar-form{
+    padding: 0px;
+} 
+
+#tu1{
+    background-image: url(img/s-bg1.png);
+    color: white;
+}
+#tu2{
+    background-image: url(img/s-bg2.png);
+    color: white;
+}
+#tu3{
+    background-image: url(img/s-bg1.png);
+    color: white;
+}
+#news{
+    margin: 10px;
+    float: left;
+}
+#news p{
+    font-size: 15px;
+}
+hr{
+    margin: 10px;
+    border: 2px dashed grey;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 10px;
+}
+ul li p{
+    float: left;
+}
+ul li span{
+    float: right;
+}
+.se{
+    margin: 10px;
+}
+#a1{
+    float: right;
+}
+.se img{
+    width: 100%;
+    height: 80px;
+}

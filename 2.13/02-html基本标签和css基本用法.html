@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html的基本标签和CSS基本用法</title>
+    <!--
+        style定义html文档的样式信息。
+        在style标签内部定义样式，我们称之为：内联样式。
+    -->
+    <style>
+        body{
+            background-color: gainsboro;
+        }
+        h1{
+            /*文本颜色*/
+            color: rebeccapurple;
+            /*文字大小*/
+            font-size: 20px;
+            /*文本加粗*/
+            font-weight: normal;
+            /*文本居中*/
+            text-align: center;
+        }
+        p{
+            /*文本缩进*/
+            text-indent: 2em;
+        }
+        img{
+            width: 200px;
+            height: 300px;
+        }
+        /*h5{
+            text-align: center;
+        }*/
+    </style>
+
+    <!--引入外部CSS文件-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--标题-->
+    <!--在开始标签内部，通过给标签的style属性赋值来添加样式，称之为：行内样式-->
+    <h1 style="background-color: lightpink">这是一个标题</h1>
+    <h2>这是一个标题</h2>
+    <h3>这是一个标题</h3>
+    <h4>这是一个标题</h4>
+    <h5>这是一个标题</h5>
+    <h6>这是一个标题</h6>
+
+    <!--paragraph:段落-->
+    <p>
+        &#x3000; &#x3000;G:\2.13\02-html基本标签和css
+        基本用法.html
+    </p>
+
+    <!--
+        img:image 图片
+        source :资源，来源
+        alt：alternate,替换，备选项
+    -->
+    <img src="2.jpg" alt="习大大考察">
+
+    <!--a链接：hypertext refrence,超文本链接,
+    该属性值为：跳转页面
+    title: 鼠标悬停是,提示性文本
+    target：目标。
+    _blank：空白，表示在新窗口中打开页面
+    _self：自己的本身的，表示在当前窗口打开页面-->
+    <a href="http://www.baidu.com" title="百度" target="blank">百度一下</a>
+    <a href="03-test.html">跳转到二级页面</a> 
+</body>
+</html>  

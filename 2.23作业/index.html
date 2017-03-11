@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正方体</title>
+    <style>
+        main{
+            width: 900px;
+            height: 900px;
+            margin: 0px auto;
+            background-color: lavender;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+
+        }
+        #a1{
+            background-color: red;
+            transform: translate3d(200px,200px,-200px) scale3d(0.8,0.8,2);
+
+        }
+        #a2{
+            background-color: blue;
+            /*transform: skew(45deg 45deg);
+            transform-origin: 0% 100%;
+            transform: rotate3d(1,0,0,100deg);*/
+
+            transform: translate3d(20px,0px,0px) rotateY(45deg);
+        }
+        #a3{
+            background-color: green;
+            transform: skew(45deg 45deg);
+            /*transform: translate3d();
+            transform: rotatey(100deg);*/
+        }
+
+        #a4{
+            /*background-color: black;*/
+        }
+        #a5{
+            background-color: rebeccapurple;
+        }
+        #a6{
+            background-color: orangered;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="a1"></div>
+        <div id="a2"></div>
+        <div id="a3"></div>
+        <div id="a4"></div>
+        <div id="a5"></div>
+        <div id="a6"></div>
+    </main>
+</body>
+</html>

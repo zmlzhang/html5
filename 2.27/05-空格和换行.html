@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>空格和换行样式</title>
+    <style>
+        p {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            /*强制换行*/
+            word-break: break-all;
+            /*温柔换行*/
+            word-break: break-word;
+            /*
+                保留文本空格和换行
+                pre-wrap:超出换行
+                pre-line:超出不保留空格
+            */
+            white-space: pre;
+            /*指定单词间的距离*/
+            word-spacing: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        在页面指定区域中如果出现较长单词或者是URL
+        默认是不会再单词内换行，他会让单词整体换行或者超出区域显示
+    -->
+    <p>
+        hfjkslihtrjnjskjsjsjjfhvksjjnvjjnuhskhujkvjosjr;ofjvj
+    </p>
+</body>
+
+</html>

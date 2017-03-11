@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            width:300px;
+            height: 300px;
+            margin: 100px auto;
+        }
+        .con{
+            border: 1px solid red;
+
+            /*
+                一般3D转换的视角（视点）写在要旋转的元素的父元素中
+            */
+
+            /*透视，指定图像所在平面的距离
+            指定观察者与z=0平面间的距离
+            他可以是三维空间中变换的元素产生透视效果
+            z>0三维空间中变换的元素会比正常大
+            z<0三维空间中变换的元素会比正常的小*/
+            perspective: 1000px;
+
+            /*perspective-origin:设置十点的位置是基于x轴和y轴*/
+            /*默认视角的位置：50% 50%*/
+            perspective-origin:80% 50%； 
+        }
+        .box{
+            background-color: black;
+            /*设置透明度，取值范围【0~1】*/
+            opacity: 0.5;
+
+            /*
+                3D图像转换：平移translate   缩放scale      旋转rotate
+            */
+            transform: translateZ(-1000px);
+
+            /*
+                rotate（1,0,0,30deg）:前三个值是说明绕哪个轴旋转（1代表旋转）
+                最后一个值是旋转的角度。
+            */
+            transform: rotate3d(1,0,0,30deg);
+
+            transform: translate3d(10px,20px,30px);
+
+            transform: scale3d(1,1.5,2)
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box">3D转换元素</div>
+    </div>
+</body>
+</html>
+
+<!--
+    如何确定顺时针方向
+    左手法则：
+    大拇指指向正方向，
+    四指弯曲的方向就是顺时针方向 
+-->

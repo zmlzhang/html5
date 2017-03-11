@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="author" content="张漫丽">
+        <title>工具提示</title>
+        <link href="bs/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+        
+        <script src="bs/js/jquery.min.js"></script>
+        <script src="bs/js/bootstrap.min.js"></script>
+        <script>
+
+        // 
+        // 使用下面这段代码来启用页面中的提示工具
+        // $()html文档加载完成之后，里面的function会被调用
+        // $('[data-toggle="tooltip"]').可以找到data-toggle=""属性
+            $(function () {
+                  $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+    </body>
+</html>

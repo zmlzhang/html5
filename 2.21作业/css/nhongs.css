@@ -1,0 +1,149 @@
+body,p,ul,li{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*头部logo设置*/
+header{
+    width: 1000px;
+    margin: 0px auto;
+}
+header div img:nth-child(2){
+    float: right;
+    margin: 20px 0px;
+}
+
+/*nav导航条设置*/
+nav{
+    background-color: red;
+}
+nav ul{
+    width: 1000px;
+    list-style: none;
+    margin: 0px auto;
+    /*float: left;*/
+}
+nav ul::after{
+    display: block;
+    clear: both;
+    content: '';
+    height: 0px;
+    visibility: hidden;
+}
+nav ul li{
+    width: 90px;
+    float: left;
+    margin-right: 80px;
+}
+a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    background-color: white;
+    color: red;
+    padding:5px 10px 20px 5px; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/*大图片*/
+#a1{
+    width: 100%;
+}
+#a1 img{
+    width: 100%;
+}
+
+/*身体：主要部分*/
+main {
+            width: 800px;
+            margin: 0px auto;
+}
+main::after{
+    display: block;
+    clear: both;
+    content: '';
+    height: 0px;
+    visibility: hidden;
+}
+.b1{
+    width: 200px;
+    height: 300px;
+    float: left;
+    background-color: yellow;
+}
+.b2{
+    width: 590px;
+    height: 600px;
+    float:right;
+    margin-left: 10px;
+    background-color: gray;
+}
+.b3{
+    width: 200px;
+    height: 290px;
+    float: left;
+    margin: 10px auto;
+    background-color: orange;
+}
+
+
+/*下部分*/
+.b4{
+    width: 800px;
+    height: 250px;
+    float: left;
+}
+#c1{
+    width: 490px;
+    height: 250px;
+    background-color: limegreen;
+    float: left;
+    margin-right: 10px;
+}
+#c2{
+    width: 300px;
+    height: 250px;
+    float: right;
+    background-color: blue;
+}
+
+#d1{
+    width: 800px;
+    margin: 10px auto;
+}
+#d1 ul{
+    /*width: 100%;*/
+    list-style: none;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 2px 2px gray;
+}
+#d1 ul::after{
+    display: block;
+    clear: both;
+    content: '';
+    height: 0px;
+    visibility: hidden;
+}
+#d1 li{
+    float: left;
+    margin-right: 30px;
+}
+
+
+/*也为*/
+footer{
+    background-color: red;
+}
+.foot{
+    width: 600px;
+    margin: 0px auto;
+}
+.foot p{
+    font-size: 15px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+}

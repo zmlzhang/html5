@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // if 判断语句
+        /*
+           if(表达式/判断条件){满足条件时执行的代码},满足条件下做什么事情。
+           if（）{}else{}，满足条件做什么，不满足条件做什么。
+           if（）{}else if（）{}else if （）{}.....
+        */
+
+        var age = 19
+        if(age>=18){
+            alert('他的年龄已经超过18岁了。可以自己独立生活')
+        }
+
+        var score = 59.9
+        if(score >= 60){
+            alert('该学科成绩合格')
+        }
+        else{
+            alert("你的成绩不合格，需要补考")
+        }
+
+        if(score >= 90){
+            alert("优秀")
+        }
+        else if(score >=80){
+            alert("良好")
+        }
+        else if(score >= 70 ){
+            alert("一般")
+        }
+        else if(score >= 60 ){
+            alert("合格")
+        }
+        else{
+            alert("不合格")
+        }
+
+        //for循环语句，i++的意思是i=i+1
+
+        for(var i=0;i<100;i++){
+            console.log(i)
+        }
+    </script>
+</body>
+</html>

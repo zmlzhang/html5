@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动2</title>
+    <style>
+        li{
+            float: left;
+        }
+        ul{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="a1">
+        <ul>
+            <li>南加冰1</li>
+            <li>南加冰2</li>
+            <li>南加冰3</li>
+            <li>南加冰4</li>
+            <li>南加冰5</li>
+        </ul>
+    </div>
+    <div id="a2">
+        <!--
+            clear:  left/right/both.清楚左右浮动
+            让后面受影响的元素去清除浮动
+
+            这种清除浮动的方式不能解决
+                浮动元素的父元素高度为零的现象
+            所以这种方式也不推荐使用
+        -->
+        <ul style="clear: both">
+            <li>女嘉宾1</li>
+            <li>女嘉宾2</li>
+            <li>女嘉宾3</li>
+            <li>女嘉宾4</li>
+        </ul>
+    </div>
+</body>
+</html>

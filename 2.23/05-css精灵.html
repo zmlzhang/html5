@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css精灵</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            /*background-image: url(image/icons.jpg);
+            background-position: -600px -400px;
+            background-size: 1400px 1400px;*/
+
+            background: url(image/icons.jpg) no-repeat -600px -400px/1400px 1400px;
+        }
+        section{
+            width: 600px;
+            height: 600px;
+            border: 1px solid red;
+            background: url(image/hg1.jpg) no-repeat 0px 0px/300px 300px,
+                        url(image/hg2.jpg) no-repeat 300px 0px/300px 300px,
+                        url(image/hg3.jpg) no-repeat 0px 300px/300px 300px,
+                        url(image/hg4.jpg) no-repeat 300px 300px/300px 300px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <section></section>
+</body>
+</html>

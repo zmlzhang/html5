@@ -1,0 +1,93 @@
+body{
+    width: 1000px;
+    margin: 0px auto;
+    background-color: lightgray;
+}
+.yj{
+    width: 1000px;
+    height: 400px;
+}
+
+/*电话*/
+.dh1{
+    border: 1px solid limegreen;
+    width: 120px;
+    font-size: 15px;
+    color: limegreen;
+    float: left;
+    margin: 20px 10px;
+    padding: 10px;
+}
+.dh2{
+    border: 1px solid limegreen;
+    width: 120px;
+    font-size: 15px;
+    color: limegreen;
+    float: right;
+    padding: 10px;
+    margin: 20px 10px;
+}
+
+/*基本信息*/
+.jb{
+    background-color: white;
+    padding: 15px 5px 5px 10px;
+}
+#jb1{
+    float: left;
+}
+#jb1 img{
+    width:30px;
+    height: 30px;
+}
+#jb1 span{
+    font-size: 15px;
+    margin-left: 20px;
+  
+}
+#jb2{
+    border: 1px solid lawngreen;
+    font-size: 15px;
+    float: right;
+     padding: 5px;
+}
+#lp{
+    background-color: white;
+    margin-top: 1px;
+    list-style: none;
+}
+span{
+    font-size: 15px;
+}
+
+/*楼盘地址*/
+.dz,.js{
+    background-color: white;
+}
+#dz{
+    padding: 15px 5px 5px 10px;
+    border-bottom: 2px solid lightgray;
+}
+#dz img{ 
+    width: 30px;
+    height: 30px;
+}
+#dz1 img{ 
+    margin: 10px;
+    width: 980px;
+    height: 400px;
+}
+#dz2{ 
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px 10px;
+}
+
+.js{
+    margin-top: 30px;
+}
+.js p{
+    font-size: 15px;
+    margin: 10px;
+    line-height: 20px;
+}

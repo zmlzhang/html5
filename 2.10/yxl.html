@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原溪离</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            margin: 0px;
+
+            /*让ul相对于 body 进行定位*/
+            position: relative;
+        }
+        main{
+            widows: 100%;
+            height: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        ul{
+            position: absolute;
+            /*top: 300px;*/
+            bottom: 50px;
+
+            /*设置列表样式*/ 
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        li{
+            margin-top: 5px;
+
+            /*最初让每一个li平移到窗口可见区域之外*/
+            /*transform: 平移*/
+            transform: translateX(-220px);
+
+            /*让每一个li都执行slide 动画*/
+            animation-name: slide;
+            animation-duration: 2.5s;
+            /*当动画结束时，让做动画的li停留在结束状态*/
+            animation-fill-mode: forwards;
+        }
+        a{
+            /*将文本的下划线去掉*/
+            text-decoration: none;
+             background-color:lavender;
+             color:black;
+
+            padding: 10px 0px 10px 20px;
+            line-height: 240%;
+            /*display: block;*/
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            /*添加背景图*/
+            background-image: url(right-arrow.png);
+            /*背景图默认情况下是平铺的*/
+            background-repeat: no-repeat;
+            /*设置背景图的大小*/
+            background-size: 18px 22px;
+
+            /*背景图定位*/
+            background-position: 90% center;
+
+        }
+        #xq{
+            padding-right: 60px;
+        }
+        #hx{
+            padding-right: 75px;
+        }
+        #tc{
+            padding-right: 90px;
+        }
+        #kf{
+            padding-right: 75px;
+        }
+        #fd{
+            padding-right: 60px;
+        }
+        /*#f{
+            animation-delay: 0s;
+        }*/
+        #s{
+            animation-delay: 0.5s;
+        }
+        #t{
+            animation-delay: 1s;
+        }
+        #f{
+            animation-delay: 1.5s;
+        }
+        #i{
+            animation-delay: 2s;
+        }
+
+        @keyframes slide{
+            0%{
+                transform: translateX(-200px);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <img src="yxl-2.jpg" alt="">
+    </main>
+
+    <!--ul: unorder list 无序列表 li：list item 列表项-->
+    <ul>
+        <li id="r"><a href="" id="xq">楼盘详情</a></li>
+        <li id="s"><a href="" id="hx">全景户型</a></li>
+        <li id="t"><a href="" id="tc">项目图册</a></li>
+        <li id="f"><a href="" id="kf">预约看房</a></li>
+        <li id="i"><a href="" id="fd">房贷计算</a></li>
+    </ul>
+</body>
+</html>

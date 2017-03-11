@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位2</title>
+    <style>
+         #centainer{
+             width: 500px;
+             height: 500px;
+             position: relative;
+             border: 3px dashed rebeccapurple;
+         }
+         .innerBox{
+             /*background-color: ghostwhite;*/
+             width: 50px;
+             height: 50px;
+             font-size: 15px;
+             color: white;
+         }
+         /*选择器 选择器，  这种形式我们称职为后代选择器*/
+         #centainer div:nth-child(1){
+             background-color: red;
+         }
+         #centainer div:nth-child(2){
+             background-color: blue;
+             position: absolute;
+             top: 0px;
+             right: 0px;
+         }
+         #centainer div:nth-child(3){
+             background-color: darkslateblue;
+             position: absolute;
+             left: 0px;
+             bottom: 0px;
+         }
+         #centainer div:nth-child(4){
+             background-color: green;
+         }
+         p{
+             background-color: red;
+             position: absolute;
+             top: 800px;
+             left: 20px;
+         }
+         .hh{
+             background-color: blue;
+             position: absolute;
+             right: 19px;
+             top: 900px;
+         }
+    </style>
+</head>
+<body>
+    <!--
+        在标准文档流下，页面布局我们叫：流式布局
+        流式布局：从方向上来说,是从上往下，从左往右。
+        从空间来说，是尽可能的少占用空间
+
+        绝对定位 和固定定位的元素会脱离标准文档流。
+
+        如果一个标签脱离标准文档流，那么该标签
+        （无论是行标签还是块标签或者是行内块标签）
+        最终都会变为：行内块标签
+    -->
+    <div id="centainer">
+        <div class="innerBox">盒子1</div>
+        <div class="innerBox">盒子2</div>
+        <div class="innerBox">盒子3</div>
+        <div class="innerBox">盒子4</div>
+        <p>jsfjvifjlaf</p>
+        <span class=".hh">蛋炒饭v安抚</span>
+    </div>
+</body>
+</html>

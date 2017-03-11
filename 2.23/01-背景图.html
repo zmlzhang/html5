@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景图</title>
+    <style>
+        div{
+            width: 600px;
+            height: 600px;
+            border: 2px solid red;
+        }
+        /*
+           背景图片是按照水平方向和竖直方向平铺的
+        */
+        div:nth-child(1){
+            /*url:统一资源定位符。值为图片资源的路径*/
+            background-image: url(image/leaf.jpg);
+
+            /*
+                background-repeat: 设置啊图片是否平铺
+                no-repeat:不平铺
+                repeat-x:只在x轴平铺
+                repeat-y:只在Y轴平铺
+            */
+            background-repeat: no-repeat;
+
+            /*
+                background-size的赋值形式
+                1·使用百分比的方式，绝对值的计算以盒子的宽高为参考
+                2·使用绝对值的方式。
+                3·cover:覆盖，图片的宽高会进行等比例缩放，
+                缩放后的图片会把整个盒子覆盖，
+                但不能保证图片的完整度
+                4·contain：包含 图片的宽高会进行等比例缩放，
+                缩放后的图片能完整展示，但不能保证将盒子完全覆盖
+            */
+            background-size: 100% 100%;
+        }
+        div:nth-child(2){
+            background-image: url(image/leafs.jpg);
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>

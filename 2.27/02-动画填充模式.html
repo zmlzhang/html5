@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画填充模式</title>
+    <style>
+    section{
+        width:600px;
+        height: 400px;
+        background-color: black;
+        margin: 0px auto;
+        text-align: center;
+        position: relative;
+    }
+    img{
+        width:20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+
+        animation-name: jump;
+        animation-duration: 5s;
+
+        /*
+        animation-fill-mode: 动画填充；
+        forwards：前面；保持动画的结束状态处于today位置。
+        backwords：让动画回到初始状态
+        both：都；保持动画开始，结束状态
+        具体指的是动画开始前，标签处于开始状态
+        */
+        animation-fill-mode: forwards;
+    }
+    @keyframes jump{
+        from{
+            top:0px;
+        }
+        /*第一次结束*/
+        20%{
+            top:calc( 100% - 20px);
+        }
+        /*第一次弹起*/
+        40%{
+            top:calc( 40% - 20px);
+        }
+        60%{
+            top:calc(100% - 20px);
+        }
+        80%{
+            top:calc(80% - 20px);
+        }
+        100%{
+            top:calc(100% - 20px);
+        }
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <img src="1.jpg" alt="僵小鱼">
+    </section>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>空间分配</title>
+    <style>
+         body{
+             margin: 0px;
+         }
+         main{
+             height: 500px;
+             border: 1px solid red;
+
+             display: flex;
+         }
+         div{
+             border: 1px solid rebeccapurple;
+
+             /*设置项目在主轴方向上占据的空间*/
+             flex-basis: 100px;
+
+             /*设置项目的缩小比例，默认值为一,值越大，缩小比例越大*/
+             flex-shrink: 0;
+
+             /*设置项目的放大比例，实际就是瓜分剩余空间，默认值为一，值越大，放大比例越大*/
+             flex-grow: 1
+         }
+    </style>
+</head>
+<body>
+    <main>
+        <!--
+            单独设置某一个项目在侧轴方向的对齐方式
+        -->
+        <div style="align-self: flex-end">box1</div>
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+        <div>box5</div>
+        <div>box6</div>
+        <div>box7</div>
+        <!--
+            设置项目的排列循序，值越小，位置越靠前。
+        -->
+        <div style="order: -1">box8</div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画联系</title>
+    <style>
+        main{
+            width: 600px;
+            height: 600px;
+            margin: 0px auto;
+            position: relative;
+            background-color: lightyellow;
+        }
+        #box{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            margin: 0px auto;
+            
+            /*设置旋转变化的参考点*/
+            /*一body本身左上角*/
+            transform-origin: 40px 290px;
+            animation-name: mave,change;
+            animation-duration: 3s;
+            
+
+        }
+        #c{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+
+            top:calc(50% - 10px);
+            left: calc(50% - 10px);
+            background-color: darkred;
+            border-radius: 50%;
+        }
+        /*定义旋转动画*/
+        @keyframes mave{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+         @keyframes change{
+             0%{
+                 background-color: yellow;
+             }
+             25%{
+                 background-color: rebeccapurple;
+             }
+             50%{
+                 background-color: blue;
+             }
+             75%{
+                 background-color: green;
+             }
+             100%{
+                 background-color: black;
+             }
+         }
+       
+    </style>
+</head>
+<body>
+    <main>
+        <div id="box"></div>
+        <div id="c"></div>
+    </main>
+</body>
+</html>

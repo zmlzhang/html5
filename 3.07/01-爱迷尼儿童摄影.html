@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="张漫丽">
+    <title>爱米尼儿童摄影</title>
+    <link href="bs/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!--1.反色导航条-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!--nav header-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">爱米尼儿童摄影</a>
+            </div>
+            <!--选项区域-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="">首页</a></li>
+                    <li class="active"><a href="">客户</a></li>
+                    <li><a href="">宝贝</a></li>
+                    <li><a href="">云骂你</a></li>
+                    <li><a href="">会员卡</a></li>
+                    <li><a href="">订单</a></li>
+                    <li><a href="">预约</a></li>
+                    <li><a href="">数据</a></li>
+                    <li><a href="">产品</a></li>
+                </ul>
+
+                <!--下拉菜单-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            常伟
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">1225445</a></li>
+                            <li><a href="#">45455</a></li>
+                            <li><a href="#">45666632</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">144555</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">退出</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!--客户管理-->
+    <div style="margin-top: 50px; background-color: lightgoldenrodyellow;">
+        <div class="container">
+            <span style="font-size: 24px;line-height: 50px;">客户查询</span>
+        </div>
+    </div>
+
+    <div class="container" style="margin: 10px auto;">
+        <button type="button" class="btn btn-success">添加客户</button>
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#sou">
+            <span class="glyphicon glyphicon-search">搜索</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <table class="table table-bordered">
+            <tr>
+                <th>添加时间</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>qq</th>
+                <th>手机</th>
+                <th>固话</th>
+                <th>客户经理</th>
+                <th style="text-align: center">详情</th>
+            </tr>
+            <tr>
+                <td>2016-12-05</td>
+                <td>王晓红</td>
+                <td>女士</td>
+                <td>1255489</td>
+                <td>45546545</td>
+                <td>51456879</td>
+                <td>小瑞</td>
+                <td style="text-align: center">
+                    <a href="#" class="glyphicon glyphicon-edit"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>2016-12-05</td>
+                <td>工溪与</td>
+                <td>先生</td>
+                <td>1255489</td>
+                <td>45546545</td>
+                <td>51456879</td>
+                <td>小瑞</td>
+                <td style="text-align: center">
+                    <a href="#" class="glyphicon glyphicon-edit"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>2016-12-05</td>
+                <td>僵小鱼</td>
+                <td>女士</td>
+                <td>1255489</td>
+                <td>45546545</td>
+                <td>51456879</td>
+                <td>小瑞</td>
+                <td style="text-align: center">
+                    <a href="#" class="glyphicon glyphicon-edit"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--模态框-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="sou">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">搜索条件</h4>
+                </div>
+
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">姓名：</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">qq：</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">手机：</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">固话：</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">身份证：</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">客户经理：</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-success">搜索</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <script src="bs/js/jquery.min.js"></script>
+    <script src="bs/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动5</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        
+        li {
+            float: left;
+        }
+        /*
+             display:block;(显示)
+             display：none；（隐藏不占据页面空间）
+
+             visibility：visible；（显示）
+             visibilit：hidden（隐藏  占据空间，只是看不见）
+        */
+        
+        .b1::after {
+            display: block;
+            clear: both;
+            content: " ";
+            visibility: hidden;
+            height: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a1">
+        <ul class="b1">
+            <li>男嘉宾1</li>
+            <li>男嘉宾2</li>
+            <li>男嘉宾3</li>
+            <li>男嘉宾4</li>
+            <li>男嘉宾5</li>
+        </ul>
+
+    </div>
+
+    <div id="a2">
+        <ul class="b1">
+            <li>那嘉宾1</li>
+            <li>那嘉宾2</li>
+            <li>那嘉宾3</li>
+            <li>那嘉宾4</li>
+            <li>那嘉宾5</li>
+        </ul>
+    </div>
+</body>
+
+</html>

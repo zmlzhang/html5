@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒模型</title>
+    <style>
+        /*
+            盒模型的组成部分：内容区域：width/height
+                            填充区域(内边距)：padding
+                            边框区域：border
+                            外边框区域：margin
+            如果计算盒模型大小时默认情况下：
+            盒子的宽等于width + padding + border（左和右）
+            盒子的高度等于height + padding + border
+        */
+        div{
+            /*定义盒模型中内容区域的宽和高*/
+            width: 200px;
+            height: 50px;
+            background-color: pink;
+            /*按照顺时针方向：上，右，下，左*/
+            padding: 10px 10px 10px 10px;
+            /*代表全是20px*/
+            padding: 20px;
+            /*只设置上内边距*/
+            /*padding-top: 20px;*/
+
+            /*   
+              border:边框 粗细，类型（实线.点） 颜色
+              solide:实心线   dotted:圆点型   dashed:虚线   
+            */
+            border: 2px solid grey;
+            border-top: 1px dotted red;
+            border-top-color: palegoldenrod;
+            border-top-style: dashed;
+            border-top-width: 3px;
+
+            margin-bottom: 50px;
+        }
+        span{
+            width:200px;
+            height: 200px;
+        }
+        /*
+        从CSS角度，对
+           行标签：内容有多少就占据多大空间，
+                  不会独占一行，不能设置宽高
+           块标签：独占一行，能设置宽高
+           行内块标签：不会独占一行，能设置宽高
+
+           标签类型可以通过CSS中的display属性进行装换
+           display：block；将某个标签转化为块标签
+           display：inline；。。。。。。。行标签
+           display：inline-block；。。。。行内块标签
+        */
+        /*
+          块标签：h,div ,p 
+          行标签：a，span
+          行内块标签:img
+        */
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!--division:块-->
+    <div>hem</div>
+    <span>hid</span>
+    <a href="#">返回顶部</a><br>
+    <img src="1.jpg" alt="僵小鱼">
+</body>
+</html>

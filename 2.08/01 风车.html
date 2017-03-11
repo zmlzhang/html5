@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>转动的风车</title>
+    <style>
+         html{
+              height: 100%;
+              }
+         body{
+             margin: 0px;
+             height: 100%;
+             /*弹性布局*/
+             /*吧body设置成弹性盒子*/
+             display: flex;
+             /*设置body中的子元素，也就是main。让他在竖直方向居于底部，水平方向居中*/
+             align-items: flex-end;
+             justify-content: center;
+             /*超出部分隐藏*/
+             overflow:hidden;
+             }
+
+          main{
+            /*   模型的宽高*/
+            width:1300px;
+            height:500px;
+            /* 景图，并设置宽高*/
+            background-image: url(caodi.png);
+            background-size: 100% 100%;
+            /*草地最小宽度*/
+            min-width: 1300px;
+            /*风车给一个参考点*/
+            
+            position: relative;
+          }  
+            
+
+        #first{
+            /*设置风车所在盒子的宽高*/
+            width: 300px;
+            height: 300px;
+            /*设置风车背景图*/
+            background-image: url(fengche.png);
+            background-size: 100% 100%; 
+
+            /*position: relative;*/
+             /*对风车进行绝对定位*/
+            position: absolute;
+
+            /*相对于main的左侧，往右移动*/
+            left: 290px;
+            top: 80px;
+
+        }
+        #second{
+            /*设置风车所在盒子的宽高*/
+            width: 100px;
+            height: 100px;
+            /*设置风车背景图*/
+            background-image: url(fengche.png);
+            background-size: 100% 100%;
+
+            /*对风车进行绝对定位*/
+            position: absolute;
+
+            /*相对于main的左侧，往右移动*/
+            left: 615px;
+            top: 310px;
+
+        }
+         #third{
+            /*设置风车所在盒子的宽高*/
+            width: 200px;
+            height: 200px;
+            /*设置风车背景图*/
+            background-image: url(fengche.png);
+            background-size: 100% 100%;
+
+            /*对风车进行绝对定位*/
+            position: absolute;
+
+            /*相对于main的左侧，往右移动*/
+            left: 755px;
+            top: 230px;
+
+        }
+        /*通过标签选择器‘div’找到三个风车指定动画*/
+        div{
+            /*动画名称*/
+            animation-name: zhuandong;
+            /*动画时间以秒为单位*/
+            animation-duration: 2s;
+            /*指定动画次数*/
+            /*infinite :无数次，不停值*/
+            animation-iteration-count: infinite;
+            /*定义动画的速度曲线 linear:线性的（匀速）*/
+            animation-timing-function: linear;
+        }
+        /*鼠标悬停在div上时：动画加速*/
+        div:hover{
+             animation-duration: 1s;
+        }
+        /*鼠标点击不松开，动画停止*/
+        div:active{
+            animation: none;
+        }
+        /*定义关键帧动画*/
+        @keyframes zhuandong{
+            /*0% :初始状态，100% ：结束状态*/
+            0%{
+                /*transform: 转换，转变，rotate：旋转*/
+                /*deg：角度*/
+                transform: rotate(0deg);
+            }
+            100%{
+                 transform: rotate(360deg);
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--main 表示草地-->
+    <main>
+        <div id="first"></div>
+        <div id="second"></div>
+        <div id="third"></div>
+    </main>
+</body>
+</html>

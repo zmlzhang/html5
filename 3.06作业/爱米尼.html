@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="张漫丽">
+    <title>爱米尼儿童摄影</title>
+    <link href="bs/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="爱迷尼.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!--导航条-->
+    <nav class="navbar navbar-inverse navbar-fixed-top nab">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <span>爱迷尼儿童摄影</span>
+                </a>
+            </div>
+
+            <!--导航条内容-->
+            <div class="collapse navbar-collapse navbar-left" id="bs1">
+                <ul class="nav navbar-nav">
+
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">客户</a></li>
+                    <li><a href="#">宝贝</a></li>
+                    <li><a href="#">孕妈咪</a></li>
+                    <li><a href="#">会员卡</a></li>
+                    <li><a href="#">订单</a></li>
+                </ul>
+            </div>
+
+            <!--退出按钮-->
+            <button type="button" class="btn btn-default navbar-btn navbar-right hidden-xs hidden-sm tui">退出</button>
+
+            <!--下拉菜单-->
+            <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">常伟<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">1555</a></li>
+                        <li><a href="#">1244</a></li>
+                        <li><a href="#">1433</a></li>
+                        <li><a href="#">2134</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <!--.container-->
+    </nav>
+
+    <!--客户-->
+    <div class="kh">
+        <div class="container">
+            <span>客户查询及管理</span>
+        </div>
+                                                                                                                                                                                                                                                                                                        
+
+    <!--主要内容-->
+    <div class="container">
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#tj" id="tjkh">
+         添加客户
+    </button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ss" id="sou">
+         搜索
+    </button>
+        <!--表格-->
+        <table>
+            <tr>
+                <th>添加时间</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>qq</th>
+                <th>手机</th>
+                <th>电话</th>
+                <th>客户经理</th>
+                <th>详情</th>
+            </tr>
+            <tr>
+                <td>2016-45 14:24</td>
+                <td>李应许</td>
+                <td>女士</td>
+                <td>122255545</td>
+                <td>4455554125</td>
+                <td>414541255</td>
+                <td>小瑞</td>
+                <td>图片</td>
+            </tr>
+            <tr>
+                <td>2015-15 14:37</td>
+                <td>常伟</td>
+                <td>先生</td>
+                <td>144578</td>
+                <td>154546</td>
+                <td>4158761</td>
+                <td>小瑞</td>
+                <td>图片</td>
+            </tr>
+            <tr>
+                <td>2013-858 12:23</td>
+                <td>工小玉</td>
+                <td>女士</td>
+                <td>454854</td>
+                <td>45645456</td>
+                <td>4455461</td>
+                <td>小瑞</td>
+                <td>图片</td>
+            </tr>
+        </table>
+
+        <!--modal-->
+        <div class="modal fade" id="ss" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!--头-->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">搜索条件</h4>
+                    </div>
+                    <!--身体-->
+                    <div class="modal-body">
+                        <label for="#xm">姓名 ：&#x3000;&#x3000;</label>
+                        <input type="text" id="xm"><br>
+
+                        <label for="#qq">qq：&#x3000;&#x3000;&#x3000;</label>
+                        <input type="text" id="qq"><br>
+
+                        <label for="#sj">手机 ：&#x3000;&#x3000;</label>
+                        <input type="text" id="sj"><br>
+
+                        <label for="#gh">固话 ：&#x3000;&#x3000;</label>
+                        <input type="text" id="gh"><br>
+
+                        <label for="#gh">身份证 ：&#x3000;</label>
+                        <input type="text" id="gh"><br>
+
+                        <label for="#gh">客户经理 ：</label>
+                        <input type="text" id="gh"><br>
+                    </div>
+                    <!--按钮-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default suo" data-dismiss="modal">搜索</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+    </div>
+
+    <script src="bs/js/jquery.min.js"></script>
+    <script src="bs/js/bootstrap.min.js"></script>
+</body>
+
+</html>

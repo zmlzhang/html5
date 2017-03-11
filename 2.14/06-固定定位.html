@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>固定定位</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            height: 60px;
+            background-color: lemonchiffon;
+
+            /*固定定位*/
+            /*固定定位的参考点是浏览器窗口*/
+            position: fixed;
+            top:0px;
+
+            width: 100%
+        }
+        main{
+            height: 5000px;
+            width: 500px;
+            margin: 60px auto 0px;
+            background-color: navajowhite
+        }
+        a{
+            font-size: 30px;
+            color: blue;
+            background-color: rebeccapurple;
+            /*设置文本是否有下划线（给文本添加线条）*/
+            text-decoration: none;
+
+            position: fixed;
+            bottom:0px;
+            right: 0px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">导航条</div>
+    <main>主要内容</main>
+    <a href="#">返回顶部</a>
+</body>
+</html>

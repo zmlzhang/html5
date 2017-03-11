@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关键帧动画</title>
+    <style>
+    html{
+        height: 1000%;
+    }
+    body{
+        height: 100%;
+        margin: 0px;
+        background-color: black;
+    }
+    section{
+        width:600px;
+        height: 600px;
+        margin: 0px auto;
+        background-color: yellow;
+        position: relative;
+    }
+    div{
+        width: 50px;
+        height: 50px;
+        background-color: rebeccapurple;
+        border-radius: 50%;
+        position: absolute;
+
+        /*指定让div执行rotate动画*/
+        animation-name: rotate;
+        /*动画持续的时间*/
+        animation-duration: 8s;
+        /*动画的缓动函数*/
+        animation-timing-function: linear;
+        /*动画延迟时间*/
+        animation-delay: 1s;
+        /*动画重复次数；infinite：无数次
+        iteration：重复，*/
+        animation-iteration-count: infinite;
+        /*动画执行方向
+        alternate-reverse： 先反在正
+        reverse：反方向
+        normal：正常
+        alter那特殊：一正一反*/
+        animation-direction: alternate-reverse;
+
+        /*animation:动画名字 */
+    }
+    #a2{
+        width: 50px;
+        height: 50px;
+        background-color: lightcoral;
+        border-radius: 50%;
+        position: absolute;
+
+        /*指定让div执行rotate动画*/
+        animation-name: rotate;
+        /*动画持续的时间*/
+        animation-duration: 5s;
+        /*动画的缓动函数*/
+        animation-timing-function: linear;
+        /*动画延迟时间*/
+        animation-delay: 1s;
+        /*动画重复次数；infinite：无数次
+        iteration：重复，*/
+        animation-iteration-count: cubic-bozier(.23,.19,.98,.56);
+        /*动画执行方向
+        alternate-reverse： 先反在正
+        reverse：反方向
+        normal：正常
+        alter那特殊：一正一反*/
+        animation-direction: alternate;
+
+    }
+    /*定义动画  动画名字
+      {}指定整个动画关键帧*/
+    @keyframes rotate{
+       0% /*from*/{
+           /*表示动画开始*/
+           top: 0px;
+           left: 0px;
+        }
+        25%{
+            top:0px;
+            left: calc(100% - 50px);
+        }
+        50%{
+            top:calc(100% - 50px);
+            left: calc(100% - 50px);
+        }
+        75%{
+            top:calc(100% - 50px);
+            left: 0px;
+        }
+        100%/*to*/{
+            /*表示动画结束*/
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <!--<section>-->
+        <div></div>
+        <div id="a2"></div>
+    <!--</section>-->
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="张漫丽">
+    <title>栅格系统</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .row{
+            border: 1px solid red;
+        }
+        .row div{
+            border: 1px dashed gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+         <!--Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+            <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+            <div class="col-xs-12 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+
+         <!--Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+
+         <!--Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+            <div class="col-xs-6">.col-xs-6</div>
+            <div class="col-xs-6">.col-xs-6</div>
+        </div>
+    </div>
+
+    <!--<div class="container">
+        两行，第一行:分三块，在大屏幕下每一块分别占3,4,5
+        第二行：分四块，在大屏幕下每块分别占3，
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-xs-4">1</div>
+            <div class="col-lg-4 col-md-6 col-xs-4">2</div>
+            <div class="col-lg-4 col-md-6 col-xs-4">3</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-xs-3">1</div>
+            <div class="col-lg-3 col-md-6 col-xs-3">2</div>
+            <div class="col-lg-3 col-md-6 col-xs-3">3</div>
+            <div class="col-lg-3 col-md-6 col-xs-3">4</div>
+        </div>
+    </div>-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

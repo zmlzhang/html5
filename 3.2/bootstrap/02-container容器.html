@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="author" content="张漫丽">
+        <title></title>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        <style>
+            body{
+                margin: 0px;
+            }
+            /*
+            .container:实现的原理：@媒体查询 + 定宽居中
+            */
+            .container-fluid{
+                height: 60px;
+                box-sizing: border-box;
+                background-color: red;
+                padding: 15px 0px;
+            }
+            @media (min-width:768px){
+                .container{
+                    width: 750px;
+                }
+            }
+            @media (min-width:992){
+                .container{
+                    width: 970px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+        </div>
+
+
+        <!--<script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>-->
+    </body>
+</html>

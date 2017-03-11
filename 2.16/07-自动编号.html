@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动编号</title>
+    <style>
+    /*
+        确定要计数的范围。创建一个计数器
+        counter-reset: name (自定义) integer(指定计数
+        的起始值，默认值为零也就是从一开始计数)
+
+    */
+        div{
+            /*-1表示从0开始计数*/
+            counter-reset: h2;
+        }
+        h2{
+            /*
+                对要计数的标签，设置计数器的递增，指定增量
+                counter-increment:name  integer (指定每
+                次递增的值，默认为一)
+            */
+            counter-increment: h2;
+
+            counter-reset: mh3;
+
+            margin: auto 10px;
+        }
+        h2::before{
+            /*
+                获取计数器现在的值，并作为h2前缀
+                counter（name）:用来获取计数器现在的取值
+                在增加的数字后面添加“、”
+            */
+            content: counter(h2)"、";
+        }
+        h3{
+            counter-increment: mh3;
+            counter-reset: mh4;
+            margin: auto 40px;
+        }
+        h3::before{
+            content: counter(h2)"-"counter(mh3)"、"
+        }
+        h4{
+            counter-increment: mh4;
+            margin: auto 80px;
+        }
+        h4::before{
+            content: counter(h2)"-"counter(mh3)"-"counter(mh4)"、";
+        }
+    </style>
+</head>
+<body>
+    <h1>个人简历</h1>
+    <div>
+        <h2>基本性别</h2>
+        <h3>王晨阳</h3>
+        <h3>nv</h3>
+        <h3>12345678978</h3>
+        <h3>郑州市经开区第一大jie</h3>
+        <h2>专业技能</h2>
+        <h3>精通html5</h3>
+        <h4>html 5jinbenjiegou</h4>
+        <h4>djdjddswdvs</h4>
+        <h4>kdkdidjdj</h4>
+        <h3>精通css3</h3>
+        <h3>精通JavaScript</h3>
+        <h2>求职意向</h2>
+        <h2>项目经验</h2>
+    </div>
+</body>
+</html>
