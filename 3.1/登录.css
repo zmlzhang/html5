@@ -1,0 +1,107 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0px;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 100%;
+    /*设置为弹性盒子。让它内部的子元素做弹性布局*/
+    display: flex;
+    /*设置主轴方向*/
+    flex-direction: column;
+    /*设置主轴与交叉轴的对齐方式*/
+    justify-content: space-around;
+    align-items: center;
+
+    /*background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center center;*/
+
+    /*filter: blur(10px);*/
+
+    position:absolute;
+    top:0px;
+    left: 0px;
+    z-index: 1;
+}
+
+
+/*头部的按钮*/
+#btn{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+#btn input{
+    border: none;
+    /*rgb:三原色 取值范围：0~255
+    a:alpha 取值范围：0·1*/
+    background-color: rgba(0, 0, 0, 0);
+
+    font-size: 0.9rem;
+    color: white;
+}
+
+/*头像*/
+#tx img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+/*账号密码*/
+form #ac{
+    margin-bottom: 10px;
+}
+form div{
+    border-bottom: 1px solid gray;
+}
+form input{
+    border: none;
+    background-color: rgba(0,0, 0, 0);
+    color: white;
+    /*font-size: 1rem;*/
+}
+
+/*登录*/
+#dl a{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+#dl button{
+    width: 5rem;
+    height: 2rem;
+}
+
+/*其他登录方式*/
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+footer img{
+    width: 3rem;
+}
+
+/*模糊背景*/
+#bg{
+    width: 100%;
+    height: 100%;
+
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+
+    /*滤镜实现模糊效果 值有越大，越模糊*/
+    filter: blur(10px);
+    position:absolute;
+    top:0px;
+    left: 0px;
+}

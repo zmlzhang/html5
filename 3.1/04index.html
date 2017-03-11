@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片库</title>
+
+    <style>
+        body{
+            margin: 0px;
+        }
+        main{
+            display: flex;
+            padding: 5px;
+            flex-wrap: wrap;
+        }
+        img{
+            margin: 5px;
+            width: calc((100% - 40px)/4);
+        }
+        /*当显示区域的宽度小于等于1000px时*/
+        @media screen and (max-width:1000px){
+            img{
+                width: calc((100% - 30px)/3);
+            }
+        }
+        @media screen and (max-width:700px){
+            img{
+                width: calc((100% - 40px)/2);
+                margin: 10px;
+            }
+        }
+        @media screen and (max-width:400px){
+            img{
+                width:calc((100% - 20px)/1) 
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="imges/1.jpg" alt="">
+        <img src="imges/2.jpg" alt="">
+        <img src="imges/3.jpg" alt="">
+        <img src="imges/4.jpg" alt="">
+        <img src="imges/5.jpg" alt="">
+        <img src="imges/6.jpg" alt="">
+        <img src="imges/7.jpg" alt="">
+        <img src="imges/8.jpg" alt="">
+        <img src="imges/9.jpg" alt="">
+        <img src="imges/10.jpg" alt="">
+        <img src="imges/11.jpg" alt="">
+        <img src="imges/12.jpg" alt="">
+        <img src="imges/13.jpg" alt="">
+        <img src="imges/14.jpg" alt="">
+        <img src="imges/15.jpg" alt="">
+        <img src="imges/16.jpg" alt="">
+        <img src="imges/17.jpg" alt="">
+        <img src="imges/18.jpg" alt="">
+        <img src="imges/19.jpg" alt="">
+        <img src="imges/20.jpg" alt="">
+    </main>
+</body>
+</html>
