@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>流程控制语句</title>
+</head>
+<body>
+
+
+    <script>
+        // if...
+        // if(表达式，条件判断语句) {}...多条件判断
+        // if(){} else if(){}...
+        // if(){} else{}...
+
+        /*
+            例子：假设小明的成绩是89.规定如果分数>=90分，为优秀
+                  如果 >= 80 分。同时<90分，为良好
+                  如果>60分，同时<80 分，为及格
+                  如果小于60分，不及格
+        */
+
+        var score = 89;
+        if (score >= 90){
+            console.log("小明的成绩是优秀的");
+        }
+        if (score >= 80 && score <= 90){
+            console.log("小明成绩是良好的")
+        }
+        if (score >= 60 && score <= 80){
+            console.log("小明的成绩合格了");
+        }
+        if (score <60 ){
+            console.log("小明的成绩没有合格")
+        }
+
+
+        // 方法二：
+         var score = 89;
+        if (score >= 90){
+            console.log("小明的成绩是优秀的");
+        }
+        else if(score >= 80 && score < 90){
+            console.log("小明成绩是良好的")
+        }
+        else if(score >= 60 && score < 80){
+            console.log("小明的成绩合格了");
+        }
+        else{
+            console.log("小明的成绩没有合格")
+        }
+
+
+        // 输出字符串时加 ""。
+
+                                                                                                                                                        
+
+        if (score >= 90){
+            console.log(1)
+        }
+        else {
+            console.log(2)
+        }
+
+
+        //小明身高体重
+
+        var w = 55;
+        var h = 1.72;
+        var s = w / (h^2);
+
+        if (s<18.5){
+            console.log("过轻")
+        }
+        else if (s<25){
+            console.log("正常")
+        }
+        else if (s<28){
+            console.log("过重")
+        }
+        else if (s<32){
+            console.log("肥胖")
+        }
+        else {
+            console.log("过度肥胖")
+        }
+
+
+        // switch-case
+
+        var week = 1;
+        /*switch (变量) {
+            case 变量值:{
+                如果变量的取值与case后面的数值相等
+                那么执行case中的代码。}
+                break;     每个case后面都有break。
+                （当前这个case执行完之后就会跳出switch）
+        
+            default:{
+
+            }
+                break;
+        }*/
+
+
+        switch (week) {
+            case 1:
+                console.log("今天周一")
+                break;
+            case 2:
+                console.log("今天周二")
+                break;
+            case 3:
+                console.log("今天周三")
+                break;
+            case 4:
+                console.log("今天周四")
+                break;
+            case 5:
+                console.log("今天周五")
+                break;
+            case 6:
+                console.log("今天周六")
+                break;
+            case 7:
+                console.log("今天周日")
+                break;
+        
+            default:
+                console.log("你的输入有误")
+                break;
+        }
+
+
+        // 循环语句
+        // 1.for循环
+
+        /*
+            var i = 0;初始条件
+            i<100；判断条件，如果满足判断条件。循环继续，
+            否则，循环结束
+            i++ 递增条件
+        */
+
+
+        var i=0;
+        for( var i=0; i<100; i++){
+            i = i+1;
+            // console.log("a"+i);
+        }
+        console.log(i);
+
+
+        for(var j=0; j<10;j++){
+            if(j == 5){
+                console.log("b"+j);
+                /* 跳出当前循环，继续执行
+                continue;*/
+                // 跳出循环，不在继续
+                break;
+            }
+            console.log(j);
+        }
+
+
+        for(var x=0;x<=100;x++){
+            if(x % 2 == 0){
+                console.log(x);
+            }
+        }
+
+        var sum=0;
+        for(var y=0; y<=100;y++){
+            if(y%2==0){
+                sum=sum+y;
+            }
+        }
+        // console.log(sum)
+
+
+        // while 循环语句
+        var a = 0;
+        while (a < 10) {
+            a++;
+            console.log(a);
+        }
+
+
+        // do {} while ();至少循环一次。
+        // 先执行一次，然后判断条件是否成立。
+        // 如果条件成立，就继续循环
+        var b=20;
+        do {
+            b++;
+            console.log(b);
+        }while(b < 10)
+
+
+    </script>
+
+
+</body>
+</html>
