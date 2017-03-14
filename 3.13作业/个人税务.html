@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人税务</title>
+</head>
+<body>
+    
+    <script>
+        var gong = 10000
+        var yne = 0
+        var gss = 0
+        if ( gong < 7662 ){
+            yne = gong - 3500 - gong * ( 0.08 + 0.02 + 0.005 + 0.12) 
+        }
+        else{
+            yne = gong - 3500 - 7662 * ( 0.08 + 0.02 + 0.005 + 0.12)
+        }
+
+        if (yne < 0){
+            gss = 0;
+            console.log("你还不用交税，继续努力！")
+        }
+        else if ( yne <= 1500 && yne > 0){
+            gss = yne*0.03
+        }
+        else if (yne <= 4500 && yne > 1500){
+            gss = yne * 0.1 - 105
+        }
+        else if ( yne <= 9000 && yne > 4500){
+            gss = yne * 0.2 - 555
+        }
+        else if ( yne <=35000  && yne > 9000){
+            gss = yne * 0.25 - 1005
+        }
+        else if ( yne <= 55000 && yne > 35000){
+            gss = yne * 0.3 - 2755
+        }
+        else if ( yne <= 80000 && yne > 55000){
+            gss = yne * 0.35 - 5505
+        }
+        else {
+            gss = yne * 0.45 - 13505
+        }
+
+        console.log("工资："+ gong )
+        console.log("应纳税所得额：" + yne)
+        console.log("个人所得税:" + gss)
+    </script>
+</body>
+</html>
