@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数</title>
+</head>
+<body>
+    <script>
+        var num1 = 20
+        var num2 = 30
+        // var sum = num1 + num2
+
+        // 函数：是一个抽象的是，用它来封装一段代码，实现一个功能
+        //他实际是一个工具，并且这个工具可以重复使用。
+
+        // 1.函数的定义
+        // function 定义函数的关键字
+        // sum 函数的名称
+        // (a,b) 函数的参数（参数列表）可以是多个参数，也可以不要参数
+        // {···} 函数体
+        function sum(a,b){
+            var result = a + b
+            return result;
+        }
+
+
+        function yuan(r){
+            var s = 3.14*(r^2)
+            return s;
+        }
+
+
+        function jdz(x){
+            if(x<0){
+                x=-x
+            }
+            else{
+                x=x
+            }
+            return x;
+        }
+
+        // 函数的调用
+        var re = sum(10,2)
+        console.log(re)
+
+
+        var de = jdz(-90)
+        console.log(de)
+
+        // 参数实际上就是为了完成摸个功能是，需要的一些变量
+        // 定义函数是： function myfunc（para1，para2,...），这里的参数我们称之为形参
+        // 调用函数时的参数我们称之为实参
+        // return 返回
+        // 如果在函数体内部，经过运算最终得出一个结果，当我们想把该结果返回出去，
+        //在函数体外部使用或者查看时，就是用return
+
+        //  （2）函数体内部的语句在执行时，如果遇到return，那么函数的执行到此结束
+
+        function myfunc1(score){
+            if(score>90){
+                return '奖励去看电影'
+            }
+            else{
+                return;
+            }
+        }
+
+
+        var score_arr = [76,84,90,45,65,34];
+
+        function cj(arr){
+            for(var i=0; i < arr.length;i++){
+               var score = arr[i]
+               if(score >= 80){
+                   return score;
+               }
+               i++
+            }
+            return false;
+        }
+
+        var fs=cj(score_arr);
+        console.log(fs);
+        
+
+
+
+    </script>
+</body>
+</html>

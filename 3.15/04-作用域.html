@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作用域</title>
+</head>
+<body>
+    <script>
+        // 变量的作用域
+        // a变量的作用域是全局，所以a我们称之为全局变量
+        var a = 10;
+
+        function my(){
+            // c这个变量的作用域是整个函数体
+            // 他的作用是局部，我们称之为局部变量
+            // c作为函数体的局部变量，不能再函数体之外使用
+
+            // var a = 40;
+            // 使用变量时会先在自己的作用域中查找是否有该变量
+            // 如果有就直接使用，如果没有，就去上一及作用域中查找，
+            // 以此类推如果最终在全局作用域中都没有，那么会报错误信息
+            var c = a + 20
+            console.log(c)
+        }
+        my()
+        console.log(c)
+    </script>
+</body>
+</html>

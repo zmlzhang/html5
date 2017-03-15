@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象</title>
+</head>
+<body>
+    <script>
+        
+        // 对象：js中的对象是一个可以将它看成一个容器（集合）
+        // 在这个集合中的数据是无序存储的，他说根据 键值对 进行数据存储的
+
+        // 键-值： （key-value）
+        // js中用{···}表示一个对象，内部的 键值对 用 XXX：XXX 表示
+            //中间用 ， 隔开
+        //  例子中的name，height，weight...这些可以称之为xiaoming这个对象的属性
+
+
+        var xiaoming = {
+            name :"小明",
+            height:178,
+            weight:75,
+            brith:1996,
+            score:"优秀",
+            ismale:true
+
+        }
+
+
+        // 如何对对象中的属性进行修改 （·）
+        console.log(xiaoming.name)  //获取对象的属性值： 对象.属性
+        xiaoming.brith = 1999;
+        console.log(xiaoming)
+
+        console.log(xiaoming.age);
+        xiaoming.age =18 
+        console.log(xiaoming)
+
+    </script>
+</body>
+</html>

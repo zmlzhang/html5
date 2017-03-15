@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>成绩</title>
+</head>
+<body>
+    <script>
+
+        var score = [76,84,90,45,65,34,82,86,80,24,36,96]
+        var bs = []
+        function cj(arr){
+            for(var i=0; i < arr.length;i++){
+               var sc = arr[i]
+               if(sc >= 80){
+                    bs.push(arr[i])
+               }
+            }
+            return bs
+        }
+
+        var fs=cj(score);
+        console.log(fs);
+
+        var x=0;
+        function sl(Arr){
+            for(var j=0; j < Arr.length;j++){
+               var sc =Arr[j]
+               if(sc >= 80){
+                   x++
+               }
+            }
+            return x
+        }
+        var shu=sl(score)
+        console.log(shu)
+        
+    </script>
+</body>
+</html>

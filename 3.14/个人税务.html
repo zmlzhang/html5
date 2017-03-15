@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人所得税计算</title>
+</head>
+<body>
+
+    <script>
+        // 工资
+        var salary = 6000;
+
+        //  basesalary 这个变量表示计算三险一金的基数
+        var basesalary = 0;
+        if(salary > 7662){
+            basesalary=7662
+        }else{
+            basesalary=salary;
+        }
+        console.log("基数:")
+
+        var sanxyj = basesalary*(0.08+0.02+0.005+0.12)
+
+        var yne = salary - sanxyj - 3500
+
+        // 确定
+        var sl = 0
+        var ss = 0
+        var tax = 0
+        if (yne <=0){
+            tax = 0
+        }
+        else{
+            if (yne <= 1500){
+                sl=0.03
+                ss = 0
+            }
+            else if (yne <= 4500){
+                sl=0.1
+                ss = 105
+            }
+            else if (yne <= 9000){
+                sl=0.2
+                ss = 555
+            }
+            else if (yne <= 35000){
+                sl=0.25
+                ss = 1005
+            }
+            else if (yne <= 55000){
+                sl=0.3
+                ss = 2755
+            }
+            else if (yne <= 80000){
+                sl=0.35
+                ss = 5505
+            }
+            else{
+                sl=0.45
+                ss = 13505
+            }
+
+            tax = yne * sl - ss
+        }
+        console.log(tax);
+
+    </script>
+    
+</body>
+</html>

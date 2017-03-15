@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统计成绩</title>
+</head>
+<body>
+
+    <script>
+        
+        function count(arr){
+            // 声明t变量
+            var t = 0
+            // 通过for循环遍历数组中的元素
+            for(var i = 0;i < arr.length;i++){
+                // 每次遍历，可以以i为索引，从arr中取出对应的元素
+                if (arr[i]>=80){
+                    // 成绩大于80 ，累加1
+                    t++
+                }
+            }
+            return t
+        }
+
+        var cj = count([80,54,56,25,89,57,79,86,39,98,92,99,100,15]);
+        console.log(cj);
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+</head>
+<body>
+    <script>
+        // 数组：Array 可以包含一类型的数据，并且这组数据是顺序存储的，
+            // 可以按照索引来读写，索引从0开始
+        // 简单地说，数组就是一个存储数据的容器
+
+        // 我们把数组中的数据称之为“元素”，每个元素对应的下标称之为“索引”
+
+        var arr = [1,2,3,"hellow",true,"world",undefined]
+
+        /*
+            2.数组的读写（读取/存储数据）操作
+                (1)slice(切片)  截取数组中的一些元素
+                并且会返回一个新的arr
+        */
+
+        var arr2 = arr.slice(0,4);
+        console.log(arr2);
+        //从索引四开始到结束 
+        console.log(arr.slice(4));
+        // 从头到尾截取所有元素
+        var arr3 = arr.slice();
+        console.log(arr3);
+
+        console.log(arr == arr3);
+
+
+        /*
+            (2) push ,pop
+              push(),该方法可以向数组中的墨梅添加若干元素
+              pop(),删除数组中的最后一个元素
+        */
+
+        var array = [1,2,3]
+        array.push('a','c','b')
+        console.log(array);
+
+        /*
+            3·shift 删除头部第一个元素（索引为零的元素）
+            unshift 往数组头部添加若干个元素
+        */
+
+
+        /*
+            4·splice(),修改数组的内容
+
+            删除：前面的参数表示从第几个索引开始修改
+                  后面的参数表示删除若干个元素
+            插入：前面的参数表示插入到数组中的元素
+
+        */
+
+        var name_arr = ["张三","王五","小红","小明","jon","李四"]
+        // name_arr.splice(3,1)
+        // console.log(name_arr)
+
+        name_arr.splice(1,1,"张龙","招呼")
+        console.log(name_arr)
+
+        /*
+            sort(),排序，默认排列
+        */
+
+        var letter_arr = ['k','d','f','e','u']
+        letter_arr.sort();
+        console.log(letter_arr)
+
+        // 6·reverse（）：可以对数组的元素进行翻转
+        letter_arr.reverse();
+        // console.log(letter_arr)
+
+        // 7.concat()  合并数组
+        var foot = ['馒头','米饭','包子','面']
+        var fruit = ['苹果','香蕉','句子']
+        var tihuan = foot.concat(fruit);
+        console.log(tihuan)
+
+
+        // 8.join(),,,返回的是字符串
+        var str = tihuan.join('/')
+        console.log(str)
+
+
+        // 9·length  查看数组长度
+        var good = ['饮料','面包','铅笔','书本']
+        console.log(good.length)
+
+        for(var i = 0; i< good.length;i++){
+            var item = good[i]
+            console.log(item)
+        }
+
+        var a = ["a",'a','a','a','a','a']
+
+        for(var i = 0;i<a.length;i++){
+            
+        }
+        
+
+    </script>
+</body>
+</html>
