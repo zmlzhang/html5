@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math对象</title>
+</head>
+<body>
+
+    <script>
+        // Math，他是js中是一个内置对象。
+        // 该对象内部提供了一些方法，用于各种数学运算的方法。
+
+        var r1 = Math.abs(-190)
+        console.log(r1);
+
+        // 全局作用域中的变量和函数；他们属于window对象的属性和方法
+        // 那么在使用的时候，可以省去“window.”直接使用
+
+        // 补充： 对象内部可以封装函数，
+        // 被封装到对象内部的函数,我们称之为对象的方法
+        // 方法的调用只能通过对象来调用：对象.方法().
+        var xiaoming = {
+            name:"黄晓明",
+            age:40,
+            sayhello:function(){
+                console.log("hello word")
+            }
+        }
+
+        // xiaoming.name
+        xiaoming.sayhello();
+
+
+
+        // Math对象中的一些方法
+        // 向下求整（舍），向上求整（入）
+        // ceil()；向上求整，天花板
+        var num1 = Math.ceil(3.9);
+        console.log(num1)
+
+        // floor():向下求整  （地板）
+        var num2 = Math.floor(3.9);
+        console.log(num2)
+
+        // round():四舍五入，直接看小数点第一位，然后进行四舍五入
+        var num3 = Math.round(3.9122);
+        console.log(num3)
+
+        // random()；随机数 默认产生0~1之间的随机数  包括零不包括一
+        var num4 = Math.random() * 1000
+        var num5 = Math.ceil(num4)
+        console.log(num4)
+
+        // [55 65)
+        // [0 10) + 55 --[55 65)
+        math.random()*10 +55
+
+        // [23 78)
+        Math.random()*55 + 23
+
+        // pow 次方
+        var num6 = Math.pow(5,2)
+        console.log(num6)
+
+        // 开平方
+        console.log(Math.sqrt(9))
+        // 对数
+        console.log(Math.log10(100))
+
+        // 三角函数
+        // 角度    弧度
+        console.log(Math.sin(Math.PI/2)) 
+        console.log(Math.tan(Math.PI/2)) 
+        console.log(Math.cos(Math.PI/2))       
+    </script>
+    
+</body>
+</html>

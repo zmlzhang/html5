@@ -24,6 +24,16 @@
         }
         my()
         console.log(c)
+
+        // js中的函数体内部可以嵌套函数，那么内部的函数可以访问外部函数中的变量,反之不行
+        function a(){
+            var x = 1
+            function b(){
+                var y = 3
+            }
+        }
+
+        // if/for语句不能形成作用域
     </script>
 </body>
 </html>

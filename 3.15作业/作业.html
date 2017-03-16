@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>乘法口诀</title>
+</head>
+<body>
+
+    <script>
+        console.log("比较最大值："+Math.max(4,5,6))
+        console.log("比较最小值："+Math.min(4,5,6))
+
+
+        // 乘法口诀
+        for(var i=1;i<=9;i++){
+            for(var j=1;j<=9;j++){
+                if(i<=j){
+                var zhi=i*j
+                console.log(i + "*" + j + "=" + zhi)
+                }
+               
+            }  
+        }
+
+        var num = '\n', 
+        sum = num;
+        for (var i = 1; i <= 9; i++) {
+            for (var j = 1; j <= i; j++) {
+                var zhi=i*j
+                sum += i + '*' + j + "=" + zhi + " ";
+            }
+            sum += num;
+        }
+        console.log(sum)
+
+
+    </script>
+    
+</body>
+</html>
