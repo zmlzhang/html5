@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串的操作</title>
+</head>
+<body>
+    <script>
+
+        // 有关字符串的操作
+
+
+        // 1·转换字符串中字母的大小写
+        var str1 = 'html'
+        var up = str1.toUpperCase();
+        console.log(up)   //小转大
+
+        var str2='JavaScript'
+        var lw=str2.toLowerCase()
+        console.log(lw)   // 大转小
+
+        //2.获取字符出那种指定位置的字符
+        var str3 = 'hellow world!'
+        var ca = str3.charAt(10)
+        console.log(ca)
+        // charCodeAt():获取字符串中指定位置的字符的Unicode（编码）
+        console.log(str3.charCodeAt(12))
+
+        // 获取子串
+        // substr(p1,p2)
+        //p1 ：起始的索引值。p2：截取的长度 
+        var sub = str3.substr(0,5)
+        console.log(sub)
+
+        // substring(p1:起始的索引值，p2：结束的索引值（包含开头，不包含结尾）)
+        console.log(str3.substring(5,11))
+        // 同样切片操作也适用于字符串
+        console.log(str3.slice(5,11))
+
+        // 字符串 地替换
+        // replace(p1,p2)
+        // p1:就读字符串，p2(新的字符串)
+
+        var str4= '我喜欢看书'
+        console.log(str4.replace('喜欢',"讨"))
+
+        // includes（）:判断一个字符串中是否包含了某个子串
+        console.log(str4.includes('你'))
+        
+        // startWith(),endsWith():判断字符串以。。。开头/结尾
+        console.log(str4.startsWith('我喜欢'))
+        console.log(str4.endsWith('书'))
+
+        // 7.split():根据指定的字符，拆分字符串，并返回一个数组
+        var str5 = "苹果\\香蕉\\句子\\草莓"
+        var strr = str5.split("\\")//用‘\\’表示反斜杠‘\’
+        console.log(strr)
+
+        // 转义符
+        // var string = "我喜欢\"html5\""
+
+
+        // 8·合并字符串
+        var str6 = 'I'
+        var str7 = 'like'
+        var str8 = 'apple'
+        var str9 = ' '
+        console.log(str6.concat(str9,str7,str9,str8))
+
+        //9.查看字符串的长度
+        var str10 = '哈哈  \'呵呵\''
+        console.log(str10.length)  //8个
+
+
+        // 每个字母出现的次数
+
+
+    </script>
+</body>
+</html>

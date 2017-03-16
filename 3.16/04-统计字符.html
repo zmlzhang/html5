@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统计字符</title>
+</head>
+<body>
+    <script>
+        
+        var str = 'abcdefghlijklmnopqrstuvwxyz'
+
+        // 创建一个空的对象，记录统计的数据
+        var obj={}
+
+        for(var i=0;i<str.length;i++){
+            // 以i为索引，取出对应的字符
+            var char = str[i];
+
+            //判断对象中是否已经存在char： XX 这样一个键值对
+            if(obj[char] != undefined){
+                obj[char] +=1
+            }
+            else{
+                obj[char]=1
+            }
+        }
+        //dir:输出详细的信息
+        console.dir(obj)
+
+        // 对于if语句，如果字符串为空则为假，
+        //     如果对象为空，为真，因为对象存在
+        
+        
+    </script>
+</body>
+</html>

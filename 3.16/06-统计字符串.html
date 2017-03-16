@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统计字符串</title>
+</head>
+<body>
+    <script>
+        var str = 'I like apple , like pear give me dome some sunshine title meat '
+        // 以“空格”这个标识符，将字符串拆分，返回一个数组
+        var arr = str.split(" ")
+       
+
+        // 创建一个空的对象。存储统计的数据，以单词为键（key），以单词出现的次数为值(value)
+        var obj = {};
+
+       
+        // 先将数组中的‘，’删除
+        for(var i = 0;i< arr.length;i++){
+            var str =arr[i]
+            if(str == ','){
+                arr.splice(i,1)
+            }
+        }
+       console.log(arr)
+        // 通过for循环，遍历数组，统计每个单词出现的次数
+        for(var j=0;j<arr.length;j++){
+            var str=arr[j]
+
+            // 判断obj中是否有 str：xxx
+            if(obj[str] == undefined){
+                // 如果 str 这个键对应找不到值，代表他第一次出现，统计数量为一
+                obj[str] = 1
+            }
+            else{
+                // 否则，代表他已经出现过，那么就在原来统计的结果上+1
+                obj[str]++
+            }
+        }
+        console.log(obj)
+    </script>
+</body>
+</html>

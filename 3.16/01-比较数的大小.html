@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>比较数值大小</title>
+</head>
+<body>
+    <script>
+        
+        // 比较两个数之间的大小，获取最大值
+        function max(x,y){
+            // if(x>y){
+            //     return x
+            // }
+            // else{
+            //     return y
+            // }
+
+            // x>y: 条件表达式
+            // ? ：表示条件成立的取值
+            // : ：表示条件不成立的取值
+            var ax = x > y ? x:y
+            return ax
+        }
+        console.log(max(19.4,34))
+
+        function max2(i,j,k){
+            var max;
+            // if(i>j){
+            //     return i
+            // }
+            // else{
+            //    return j
+            // }
+
+            // if(max>k){
+            //     return max
+            // }
+            // else {
+            //     return k
+            // }
+
+            var max = i>j ? i:j
+            max = max>k ? max :k
+            return max
+        }
+        console.log(max2(12.55,11.4,45.5))
+
+
+        // 在body中添加一个table表格
+
+        // document:文档对象
+        // createElement():该方法用于创建标签对象，并且会把标签对象返回出去
+        var table = document.createElement('table')
+
+        // document.body:获取到body这个标签对象
+        // appendChild():该方法用于将标签拼接到指定的位置
+        document.body.appendChild(table);
+
+        for (var i= 1;i<10;i++){
+            // 外层for循环，控制了行数
+
+            // insertRow(): 该方法可以直接往table中插入一个tr
+            // 并且会把该tr对象返回出来
+            var tr = table.insertRow();
+            for (var j=i;j<10;j++){
+
+                // 内层for循环，控制了每一行的列数
+
+                // insertCell(): 往tr中插入他的，并将td对象返回出来
+                var td = tr.insertCell();
+                // innerText:该属性表示往标签内部插入文本内容
+                td.innerText = i + "*" + j + "=" + i*j
+
+                // 给td添加行内样式，设置宽度
+                td.style.width="200px"
+
+                // 给td标签加class
+                td.className = 'td'
+
+                console.log(i + "*" + j + "=" + i*j)
+            }
+        }
+    </script>
+</body>
+</html>
