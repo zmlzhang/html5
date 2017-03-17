@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>排重</title>
+</head>
+<body>
+    <script>
+        var sz=[]
+        function pc(arr){
+            arr.sort();
+            console.log(arr)
+            for(var i=0; i < arr.length;i++){
+                if(   != arr[i]){
+                      sz.push(arr[i])
+                }
+            }
+            return sz
+        }
+        var shuzu=pc([2,3,5,2,6,8,4,9,6,5]);
+        console.log(shuzu)
+    </script>
+</body>
+</html>

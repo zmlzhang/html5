@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>质数</title>
+</head>
+<body>
+    <script>
+        function sushu(num){
+
+            // 一个数分解之后，因子只有1和他本身的数
+            if(num>1){
+                // 用count变量来记录有多少个数能被num除尽，余数为零
+                var count = 0
+                for(var i=1 ;i<num;i++){
+                    if(num % i == 0){
+                        count++
+                        if(count>2){
+                            // 如果能被num除尽的数，那么这个数不是质数
+                            return false
+                        }
+                    }
+                }
+                // 如果for循环执行完毕，发现count == 2那么代表num是质数
+                if(count==2){
+                    return true
+                }
+                return false
+            }
+            else{
+                return false
+            }
+        }
+        var jie=sushu(1.2)
+        console.log(jie)
+    </script>
+</body>
+</html>

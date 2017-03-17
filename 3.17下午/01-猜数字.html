@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>猜数字游戏</title>
+</head>
+<body>
+    <script>
+        
+        // 1.产生一个0~100之间的随机数
+        // var ran = Math.ceil(Math.random()*100)
+        // console.log(ran)
+
+        // prompt():显示用户输入的对话框
+        // 参数：用来提示用户输入的信息
+        // 返回值：如果用户点击确定按钮，返回用户在输入框中输入的内容
+        // 如果用户点击取消按钮，返回null
+
+        // 2.获取用户输入的内容
+        // var gs=prompt("请输入你猜的数字（0~100）")
+        // console.log(gs)
+
+        // 3.比较
+        // if(ran > gs){
+        //     alert("猜小了")
+        // }
+        // else if(ran < gs){
+        //     alert('猜大了')
+        // }
+        // else{
+        //     alert('恭喜你，猜对了')
+        // }
+
+
+        // 用户5次机会
+        function gus(){
+            var ran = Math.ceil(Math.random()*10)
+            console.log(ran)
+            var count = 3
+
+            var finsh = false;
+            while (!finsh){
+
+                // if(count<=1){
+                //     alert('机会已经用完了')
+                //     break;
+                // }
+
+                count--    //每循环一次，说明用户少一次机会
+                var gs=prompt("请输入你猜的数字（0~10）")
+                console.log(gs)
+                if(count == 0){
+                    if(ran > gs){
+                        alert("猜小了，机会已用完")
+                    }
+                    else if(ran < gs){
+                        alert('猜大了，机会已用完')
+                    }
+                    else if (ran == gs){
+                        alert('恭喜你，终于猜对了')
+                        finsh = true
+                    }
+                    break
+                }
+                else{
+
+                    if(ran > gs){
+                        alert("猜小了，还有" + count + '机会')
+                    }
+                    else if(ran < gs){
+                        alert('猜大了，还有' + count + '机会')
+                    }
+                    else if(ran == gs){
+                        alert('恭喜你，猜对了')
+                        finsh = true
+                    }
+                    else{
+                        alert('输入错误，还有' + count + '机会')
+                    }
+                }
+            }
+        }
+        gus();
+    </script>
+</body>
+</html>
