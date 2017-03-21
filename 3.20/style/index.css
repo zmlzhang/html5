@@ -1,0 +1,16 @@
+html,body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: orange;
+    margin: 20px auto;
+    /*是鼠标变成小手*/
+    cursor: pointer;
+}
+.container:hover{
+    background-color: blue;
+}
