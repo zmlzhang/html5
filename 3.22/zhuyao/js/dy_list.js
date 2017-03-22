@@ -4,7 +4,7 @@ function btn(){
     // alert('0000000')
     // var h5 = document.createElement('h5')
     // h5.innerText = '我是一个h5 标签'
-    // var div = document.getElementsByClassName(con)
+    // var div = document.getElementsByClassName('con')
     // div.appendChild(h5)
 
     //通过trim操作把字符串了开始和结尾的空白内容进行处理
