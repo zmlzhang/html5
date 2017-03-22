@@ -14,7 +14,7 @@ function btn(){
     }
     else{
         var h5  = document.createElement('h5')
-        h5.innerText = '我是一个h5 标签'
+        h5.innerText = str
         tagc.appendChild(h5)
     }
 }

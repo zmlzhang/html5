@@ -38,7 +38,7 @@ function insertAfter(newchild,refChild){
     var  next= refChild.nextElementSibling   //获取参考物的下一个节点
     if(next){
         // 在下一个节点的上一个位置加入
-        parentContainer.insertBefore(newchild.next)
+        parentContainer.insertBefore(newchild,next)
     }
     else{
         // 如果当前是结尾节点
