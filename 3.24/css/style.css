@@ -1,0 +1,21 @@
+.con{
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    display: inline-block;
+}
+.fst{
+    background-color: #f00;
+}
+.sec{
+    background-color: #0F0;
+}
+.tir{
+    background-color: #00f;
+}
+.for{
+    background-color: #000;
+}
+.fif{
+    background-color: #399;
+}
