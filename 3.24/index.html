@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="张漫丽">
+        <title>常见事件</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <!--
+            onclick   为标签添加一个事件，引号中的属性值可以理解为js代码
+            event是属于js的内置对象 可以在事件传递是时候调用
+            this是属于js的内置对象 可以在事件传递是时候调用
+            在js如果方法需要接收多个参数  在调用的时候传递单个参数或者无参数也是可以的
+        -->
+        <div class="con fst" onclick="clickHandle('frist',0)"></div>
+        <div class="con sec" onclick="clickHandle(123)"></div>
+        <div class="con tir" onclick="clickHandle(event,2)"></div>
+        <div class="con for" onclick="clickHandle(this,3)"></div>
+        <div class="con fif"></div>
+        <script src="js/index.js"></script>
+    </body>
+</html>

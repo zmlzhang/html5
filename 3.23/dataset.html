@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="张漫丽">
+        <title>dataset</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <!--
+            在html标签中常常使用data-xxx的形式存储一些自定义的数据
+                用于js中计算或者数据参数 的传递
+                在js中使用dataset属性可以获取标签传递的值
+                也可以通过dataset进行属性值的设置
+        -->
+
+        <h1 aaaa ="h1" data-aaaa='h1-data' b='123' data-x='哈哈'>标签h1</h1>
+        <ul>
+            <li data-id="1" onclick="ch(event)">li-1</li>
+            <li data-id="2" onclick="ch(event)">li-2</li>
+            <li data-id="3" onclick="ch(event)">li-3</li>
+            <li data-id="4" onclick="ch(event)">li-4</li>
+            <li data-id="5" onclick="ch(event)">li-5</li>
+        </ul>
+        <script>
+            var h1 = document.querySelector('h1')
+            console.dir(h1)
+            console.log(h1.aaaa)
+            console.log(h1.b)
+            console.log(h1.dataset)
+            
+            function ch(event){
+                console.log(event.target)     //获取点击的标签
+                console.log(event.target.dataset['id'])
+                event.target.dataset['click'] = 1    //设置dataset的值
+                event.target.dataset['click'] = event.target.dataset['click']*1 + 1
+                alert('此标签被点击了'+event.target.dataset['click']+'次')
+            }
+        </script>
+    </body>
+</html>
