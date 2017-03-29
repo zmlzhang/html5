@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="张漫丽">
+    <title>事件传播流程</title>
+    <style>
+        section {
+            background-color: red;
+        }
+        
+        main {
+            background-color: green;
+            margin: 10px;
+        }
+        
+        div {
+            background-color: blue;
+            margin: 10px;
+        }
+        
+        h1 {
+           color: white;
+
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <main>
+            <div>
+                <h1>我是一个h1，在div内部</h1>
+            </div>
+        </main>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
