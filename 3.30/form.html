@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="张漫丽">
+        <title>form表单</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <!--
+            action  表示表单提交的地址（如果不指定 默认为当前页）
+            method  表示表单的提交的方式（常见的有两种 get/post  如果不知道默认为get）
+
+            在form中input的type为submit的元素点击之后会触发表单提交行为
+        -->
+        <form action="http://www.baidu.com">
+            <ul>
+                <li>
+                    <!--
+                        onkeyup  事件在键盘抬起的时候触发
+                        onchange 事件在标签失去焦点之后触发
+                        onfocus  事件在标签获得焦点之后触发
+                    -->
+                    <input type="text" 
+                            name="userNmae" id="txtUserNmae"
+                            placeholder="请输入您的用户名" 
+                            onfocus="userNameFocus(event)"
+                            onchange="userNameChanged(event)"
+                            onkeyup="userNmaekeyup(event)">
+                </li>
+                <li><input type="text" 
+                            name="age" id="txtage"
+                            placeholder="请输入您的年龄"></li>
+                <li><input type="submit" value="提交" onclick="doSubmit(event)"></li>
+            </ul>
+        </form>
+
+
+        <script>
+            var userNmae = document.querySelector('#txtUserNmae')
+            function doSubmit(e){
+                if(userNmae.value == ""){
+                    e.preventDefault()
+                    alert('输入不能为空')
+
+                }
+            }
+
+            function userNameChanged(e){
+                console.log(e)
+            }
+
+            function userNmaekeyup(e){
+                console.log(e)
+            }
+            function userNameFocus(e){
+                console.log(e)
+            }
+
+            userNmae.focus()    //让用户名输入框
+        </script>
+    </body>
+</html>

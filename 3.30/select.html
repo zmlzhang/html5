@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="张漫丽">
+    <title>select</title>
+    <style>
+        select{
+            width: 120px
+        }
+
+    </style>
+</head>
+
+<body>
+    <select name="selType" id="sel" onchange="selChange(event)"></select>
+    <select name="selBooks" id="selBooks"></select>
+    <script>
+        var arrType = [{
+            id: 1, name: '历史'
+        }, {
+            id: 2, name: '言情'
+        }, {
+            id: 3, name: '玄幻'
+        }]
+
+        var arrBooks = [
+            {
+                id: 10001, typeId: 1, title: '中国古代史'
+            }, {
+                id: 10002, typeId: 1, title: '中国近代史'
+            }, {
+                id: 20001, typeId: 2, title: '从你的全世界路过'
+            }, {
+                id: 20002, typeId: 2, title: '水云间'
+            }, {
+                id: 30001, typeId: 3, title: '诛仙'
+            }, {
+                id: 30002, typeId: 3, title: '斗破苍穹'
+            },
+        ]
+
+
+        var selp = document.getElementById('sel')
+        var selb = document.getElementById('selBooks')
+        selp.innerHTML = '<option>请选择</option>'
+        selb.innerHTML = '<option>请选择</option>'
+
+        arrType.forEach(function (item) {
+            selp.innerHTML += '<option value="' + item.id + '">' + item.name + '</option>'
+        })
+
+        function selChange(e) {
+            // console.log(selp.value)
+            selb.innerHTML = ''
+            selb.innerHTML = '<option>请选择</option>'
+            arrBooks.forEach(function (book) {
+                if (book.typeId == selp.value) {
+                    selb.innerHTML += '<option value="' + book.id + '">' + book.title + '</option>'
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

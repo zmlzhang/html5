@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="author" content="张漫丽">
-        <title>日历</title>
-        <style>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="张漫丽">
+    <title>日历</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #ys{
+            width: 560px;
+            margin: 50px auto;
+            border: 1px solid lightgrey;
+            position: relative;
+            text-align: center;
+        }
+        #app td{
             
-        </style>
-    </head>
-    <body>
+            width: 80px;
+            height: 50px;
+            background-color: gray;
+        }
+        #pry{
+            width:50px;
+            height: 20px;
+            position: absolute;
+            top:15px;
+            left: 20px;
+            /*text-align: center;*/
+        }
+        #next{
+            width: 50px;
+            height: 20px;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="ys">
+        <button onclick="pry()" id="pry">&lt;</button>
+        <button onclick="next()" id="next">&gt;</button>
         <div id="app"></div>
-        <script src="dyTable.js"></script>
-    </body>
+    </div>
+    <script src="dyTable.js"></script>
+</body>
+
 </html>

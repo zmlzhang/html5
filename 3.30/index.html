@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="张漫丽">
+        <title>标签的默认行为</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <a onclick ="link(event)" href="http://www.baidu.com" target="_blank">baidu</a>
+        <script>
+            function link(e){
+                //a标签如果包含href属性   那么会具有默认行为及页面跳转
+                //通过执行preventDefault()方法屏蔽a标签的默认跳转
+                e.preventDefault()      //阻止默认行为触发
+                alert('标签被点击了')
+            }
+
+            var link = document.querySelector('a')
+            // link.click()    //触发click事件
+        </script>
+    </body>
+</html>

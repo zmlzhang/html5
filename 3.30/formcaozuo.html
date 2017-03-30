@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="张漫丽">
+    <title>form操作</title>
+    <link href="bs/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <form action="" class="form-horizontal">
+        <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">姓名</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="username" placeholder="请输入您的用户名">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="age" class="col-sm-2 control-label">年龄</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="age" placeholder="请输入您的年龄">
+            </div>
+        </div> 
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" onclick="submit(event)" class="btn btn-default">提交</button>
+            </div>
+        </div>
+    </form>
+    <table class="table table-bordered" id="tb">
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+    </table>
+
+    <script src="js/formcaozuo.js"></script>
+    <script src="bs/js/jquery.min.js"></script>
+    <script src="bs/js/bootstrap.min.js"></script>
+</body>
+
+</html>

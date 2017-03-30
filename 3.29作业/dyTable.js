@@ -27,39 +27,31 @@ var dyMonth = new Date(now.setDate(1)) //定义一个日期计算的时候使用
 for (var j = 0; j < 6; j++) {
     var dyRow = td.insertRow()  //添加一行
     for (var i = 0; i < 7; i++) {
-        var dyCell = dyRow.insertCell()
-        if (monthStartWeekDay <= (i+ j*7)){
+        var dyCell = dyRow.insertCell()    //添加一列
+        if (monthStartWeekDay <= (i + j * 7)) {
             dyCell.innerText = dyMonth.getDate()  //
-        
-            if(dyMonth.getMonth() != monthStart.getMonth()){
+            if (dyMonth.getMonth() != monthStart.getMonth()) {
                 dyCell.style.color = '#aaa'
             }
-
             dyMonth.setDate(dyMonth.getDate() + 1)
         }
         else {
-            dyCell.innerText = ''
+            if (dyMonth.getMonth() != monthStart.getMonth()) {
+                dyCell.style.color = '#aaa'
+            }
+            dyMonth.setDate(dyMonth.getDate() - 1)
+            // dyCell.innerText = dyMonth.getDate()-1
         }
     }
 }
 
-
-
-// var startWeekDay=now.getDay()
-// var dyRow=td.insertRow()    //动态创建一行数据
-// var dyDate=now.setDate(1)  //获取1号时间
-
-// for(var i=0;i<7;i++){
-//     var dyCell=dyRow.insertCell()   //动态创建一列数据
-
-//     if(i==startWeekDay){
-//         dyDate=new Date(dyDate.setDate(i+1))
-//         dyCell.innerText=now.getDate()
-//     }
-//     else{
-//         dyCell.innerText=''
-//     }
-// }
+function pry() {
+    dyMonth.getDate() + ''
+    console.log()
+}
+function next() {
+    dyMonth.getDate() - 1
+}
 
 div.appendChild(table)
 
