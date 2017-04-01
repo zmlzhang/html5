@@ -27,8 +27,8 @@
                     <input type="text" 
                             name="userNmae" id="txtUserNmae"
                             placeholder="请输入您的用户名" 
-                            onfocus="userNameFocus(event)"
-                            onchange="userNameChanged(event)"
+                            onblur="userNameBlur(event)"
+                            
                             onkeyup="userNmaekeyup(event)">
                 </li>
                 <li><input type="text" 
@@ -49,18 +49,22 @@
                 }
             }
 
-            function userNameChanged(e){
-                console.log(e)
-            }
+            // function userNameChanged(e){
+            //     console.log(e)
+            // }
 
             function userNmaekeyup(e){
                 console.log(e)
             }
-            function userNameFocus(e){
+            // function userNameFocus(e){
+                // console.log(e)
+            // }
+            
+            function userNameBlur(e){
                 console.log(e)
             }
 
-            userNmae.focus()    //让用户名输入框
+            // userNmae.focus()    //让用户名输入框
         </script>
     </body>
 </html>

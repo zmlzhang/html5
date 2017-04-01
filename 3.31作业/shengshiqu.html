@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="张漫丽">
+        <title>省市区选择</title>
+        <style>
+            select{
+                width: 200px;
+                height: 50px;
+                border:  2px solid gray;
+                box-shadow: 2px 2px 4px 4px grey;
+                color: 22px;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <select name="province" id="pro" onchange="pro1(event)"></select>
+        <select name="city" id="city" onchange="city1(event)"></select>
+        <select name="qu" id="qu"></select>
+        <script src="address.js"></script>
+    </body>
+</html>

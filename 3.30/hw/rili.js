@@ -40,7 +40,7 @@ function setVal(params){
             }
             if(monthStartWeekDay<=(i+7*m)){
                 dyCell.innerText = dyMonth.getDate()//
-                if(dyMonth.getMonth()!=monthStart.getMonth()){
+                if(dyMonth.getMonth()!= monthStart.getMonth()){
                     dyCell.style.color = '#999'
                 }
                 dyMonth.setDate(dyMonth.getDate()+1)
