@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="张漫丽">
+    <title>js对象和json字符串转换</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="txtName">
+        <button onclick="saveHandel(event)">保存</button>
+    </div>
+    <!--<script src="js/js-json.js"></script>-->
+
+    <script>
+        var txt = document.querySelector('#txtName')
+        if (localStorage.names) {
+        } else {
+            localStorage.names = "[]"
+        }
+        var people = JSON.parse(localStorage.names)
+        console.log(typeof people)
+        function saveHandel() {
+            if (txt.value) {
+                // localStorage.names += txt.value      //设置localStorage.names中的值
+                var p = {}
+                p.name = txt.value
+                people.push(p)
+                localStorage.names = JSON.stringify(people)
+            }
+            else {
+                alert('请输入内容')
+            }
+        }
+    </script>
+</body>
+
+</html>
